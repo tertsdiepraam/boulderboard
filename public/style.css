@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+}
+
+:root {
+  /* white-ish */
+  --fg-color-1: #f9fefe;
+  /* yellow-ish */
+  --fg-color-2: #f1cb8a;
+  /* blue-ish */
+  --fg-color-3: #517383;
+  /* black */
+  --bg-color-1: #000000;
+  /* dark blue */
+  --bg-color-2: #1b2839;
+}
+
+body {
+  background: var(--bg-color-1);
+  color: white;
+  font-family: oswald;
+}
+
+.table {
+  width: 100%;
+}
+
+.table > div {
+  background: var(--bg-color-2);
+  display: flex;
+  align-items: center;
+  padding-right: 0.5em;
+  margin: 3px 0;
+}
+
+.rank, .country-code, .athlete-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: -0.1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.rank {
+  width: 3ch;
+  text-align: right;
+  color: var(--fg-color-3);
+}
+
+.country-code {
+  width: 6ch;
+  text-align: center;
+  color: var(--fg-color-2);
+}
+
+.athlete-name {
+  color: var(--fg-color-1);
+  flex: 1;
+}
+
+.ascents {
+  display: flex;
+  gap: 0.3em;
+}
+
+.ascent {
+  height: 1.5em;
+  width: 0.7em;
+  position: relative;
+  background: var(--fg-color-3);
+}
+
+.ascent::after {
+  content: "";
+  width: 0.7em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--fg-color-2);
+}
+
+.ascent.ascent-full::after {
+  height: 100%;
+}
+
+.ascent.ascent-half::after {
+  height: 50%;
+}
+
+.ascent.ascent-empty::after {
+  height: 0;
+}
+
+.score {
+  width: 4ch;
+  text-align: right;
+}

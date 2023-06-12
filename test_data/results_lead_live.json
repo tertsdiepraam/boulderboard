@@ -1,0 +1,250 @@
+{
+  "id": 7977,
+  "event": "IFSC - Paraclimbing World Cup (L) - Innsbruck (AUT) 2023",
+  "event_id": 1337,
+  "dcat_id": 529,
+  "discipline": "Lead",
+  "status": "active",
+  "status_as_of": "2023-06-11 12:59:58 UTC",
+  "category": "Men B1",
+  "round": "Qualification",
+  "format": "IFSC: 2 routes",
+  "routes": [
+    {
+      "id": 10525,
+      "name": "D",
+      "startlist": "/api/v1/routes/10525/startlist",
+      "ranking": "/api/v1/routes/10525/results"
+    },
+    {
+      "id": 10526,
+      "name": "C",
+      "startlist": "/api/v1/routes/10526/startlist",
+      "ranking": "/api/v1/routes/10526/results"
+    }
+  ],
+  "ranking": [
+    {
+      "athlete_id": 2284,
+      "name": "Aita Sho",
+      "firstname": "Sho",
+      "lastname": "AITA",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25,
+      "bib": "6",
+      "rank": 1,
+      "score": "1.58",
+      "paraclimbing_sport_class": "Visually Impaired Climbing: B1",
+      "sport_class_state": "fixed_review_date",
+      "route_D_start_order": 3,
+      "route_C_start_order": 1,
+      "ascents": [
+        {
+          "route_id": 10525,
+          "route_name": "D",
+          "top": true,
+          "plus": false,
+          "restarted": false,
+          "rank": 1,
+          "corrective_rank": 1,
+          "score": "TOP",
+          "status": "locked"
+        },
+        {
+          "route_id": 10526,
+          "route_name": "C",
+          "top": false,
+          "plus": false,
+          "restarted": false,
+          "rank": null,
+          "corrective_rank": 2.5,
+          "score": "",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 820,
+      "name": "Aguilar Amoedo Francisco Javier",
+      "firstname": "Francisco Javier",
+      "lastname": "AGUILAR AMOEDO",
+      "country": "ESP",
+      "flag_url": "https://ifsc.results.info/images/flags/ESP.png",
+      "federation_id": 12,
+      "bib": "5",
+      "rank": 2,
+      "score": "2.24",
+      "paraclimbing_sport_class": "Visually Impaired Climbing: B1",
+      "sport_class_state": "confirmed",
+      "route_D_start_order": 2,
+      "route_C_start_order": 4,
+      "ascents": [
+        {
+          "route_id": 10525,
+          "route_name": "D",
+          "top": false,
+          "plus": true,
+          "restarted": false,
+          "rank": 2,
+          "corrective_rank": 2,
+          "score": "41+",
+          "status": "locked"
+        },
+        {
+          "route_id": 10526,
+          "route_name": "C",
+          "top": false,
+          "plus": false,
+          "restarted": false,
+          "rank": null,
+          "corrective_rank": 2.5,
+          "score": "",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 2732,
+      "name": "Nedu Razvan",
+      "firstname": "Razvan",
+      "lastname": "NEDU",
+      "country": "ROU",
+      "flag_url": "https://ifsc.results.info/images/flags/ROU.png",
+      "federation_id": 33,
+      "bib": "1",
+      "rank": 3,
+      "score": "2.74",
+      "paraclimbing_sport_class": "Visually Impaired Climbing: B1",
+      "sport_class_state": "fixed_review_date",
+      "route_D_start_order": 4,
+      "route_C_start_order": 2,
+      "ascents": [
+        {
+          "route_id": 10525,
+          "route_name": "D",
+          "top": false,
+          "plus": false,
+          "restarted": false,
+          "rank": 3,
+          "corrective_rank": 3,
+          "score": "30",
+          "status": "locked"
+        },
+        {
+          "route_id": 10526,
+          "route_name": "C",
+          "top": false,
+          "plus": false,
+          "restarted": false,
+          "rank": null,
+          "corrective_rank": 2.5,
+          "score": "",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 12674,
+      "name": "Simionescu Angelo Sebastian",
+      "firstname": "Angelo Sebastian",
+      "lastname": "SIMIONESCU",
+      "country": "ROU",
+      "flag_url": "https://ifsc.results.info/images/flags/ROU.png",
+      "federation_id": 33,
+      "bib": "2",
+      "rank": 4,
+      "score": "3.16",
+      "paraclimbing_sport_class": "Visually Impaired Climbing: B1",
+      "sport_class_state": "fixed_review_date",
+      "route_D_start_order": 1,
+      "route_C_start_order": 3,
+      "ascents": [
+        {
+          "route_id": 10525,
+          "route_name": "D",
+          "top": false,
+          "plus": true,
+          "restarted": false,
+          "rank": 4,
+          "corrective_rank": 4,
+          "score": "14+",
+          "status": "locked"
+        },
+        {
+          "route_id": 10526,
+          "route_name": "C",
+          "top": false,
+          "plus": false,
+          "restarted": false,
+          "rank": null,
+          "corrective_rank": 2.5,
+          "score": "",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    }
+  ],
+  "startlist": [
+    {
+      "athlete_id": 12674,
+      "route_start_positions": [
+        { "route_name": "C", "route_id": 10526, "position": 3 },
+        { "route_name": "D", "route_id": 10525, "position": 1 }
+      ],
+      "name": "SIMIONESCU Angelo Sebastian",
+      "firstname": "Angelo Sebastian",
+      "lastname": "SIMIONESCU",
+      "bib": "2",
+      "country": "ROU",
+      "flag_url": "https://ifsc.results.info/images/flags/ROU.png",
+      "federation_id": 33
+    },
+    {
+      "athlete_id": 2284,
+      "route_start_positions": [
+        { "route_name": "C", "route_id": 10526, "position": 1 },
+        { "route_name": "D", "route_id": 10525, "position": 3 }
+      ],
+      "name": "AITA Sho",
+      "firstname": "Sho",
+      "lastname": "AITA",
+      "bib": "6",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 2732,
+      "route_start_positions": [
+        { "route_name": "C", "route_id": 10526, "position": 2 },
+        { "route_name": "D", "route_id": 10525, "position": 4 }
+      ],
+      "name": "NEDU Razvan",
+      "firstname": "Razvan",
+      "lastname": "NEDU",
+      "bib": "1",
+      "country": "ROU",
+      "flag_url": "https://ifsc.results.info/images/flags/ROU.png",
+      "federation_id": 33
+    },
+    {
+      "athlete_id": 820,
+      "route_start_positions": [
+        { "route_name": "C", "route_id": 10526, "position": 4 },
+        { "route_name": "D", "route_id": 10525, "position": 2 }
+      ],
+      "name": "AGUILAR AMOEDO Francisco Javier",
+      "firstname": "Francisco Javier",
+      "lastname": "AGUILAR AMOEDO",
+      "bib": "5",
+      "country": "ESP",
+      "flag_url": "https://ifsc.results.info/images/flags/ESP.png",
+      "federation_id": 12
+    }
+  ]
+}
