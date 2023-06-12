@@ -6,6 +6,7 @@ authors = ["Terts Diepraam <terts.diepraam@gmail.com>"]
 license = "MIT OR Apache-2.0"
 rust-version = "1.70"
 repository = "https://github.com/tertsdiepraam/boulderboard/"
+description = "A UI for keeping track of climbing competitions"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
