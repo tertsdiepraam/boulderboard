@@ -2,18 +2,16 @@
 mod deserialize;
 mod discipline;
 
-use std::{
-    cmp::Reverse,
-    io::Write,
-};
+use std::{cmp::Reverse, io::Write};
 
 use clap::Parser;
-use deserialize::{Results, DisciplineTag};
+use deserialize::{DisciplineTag, Results};
 use dioxus::prelude::*;
 use dioxus_desktop::Config;
 use discipline::Discipline;
+use tokio::time::{sleep, Duration};
 
-use crate::discipline::{Ascent, Score, Lead, Boulder};
+use crate::discipline::{Ascent, Boulder, Lead, Score};
 
 #[derive(Parser, Debug, Props, PartialEq)]
 #[command(author, version, about, long_about = None)]
@@ -63,7 +61,12 @@ fn extract_athletes<D: Discipline>(results: &Results) -> Vec<AthleteProps<D>> {
         .ranking
         .iter()
         .map(|rank_athlete| {
-            let ascents = rank_athlete.ascents.iter().map(|a| D::Ascent::try_from(a.clone()).ok()).collect::<Option<Vec<_>>>().unwrap();
+            let ascents = rank_athlete
+                .ascents
+                .iter()
+                .map(|a| D::Ascent::try_from(a.clone()).ok())
+                .collect::<Option<Vec<_>>>()
+                .unwrap();
             // FIXME: Get the start order from the start list. The start order field on the RankAthlete might be
             // missing.
             let score = D::Score::calculate(0, &ascents);
@@ -100,9 +103,11 @@ fn Athlete<D: Discipline>(cx: Scope<AthleteProps<D>>) -> Element {
         .collect::<Vec<_>>()
         .join(" ");
 
+    let order = rank - 1;
     cx.render(rsx! {
         div {
             key: "{id}",
+            style: "--order: {order}",
             div { class: "rank", "{rank}" }
             div { class: "country-code", "{country}" }
             div { class: "athlete-name", "{initials} {last_name}" }
@@ -117,7 +122,7 @@ fn Athlete<D: Discipline>(cx: Scope<AthleteProps<D>>) -> Element {
 
 const BASE_URL: &str = "https://components.ifsc-climbing.org/results-api.php?api=event_full_results&result_url=/api/v1";
 
-async fn get_results(input: Input) -> Option<Results> {
+async fn fetch_results(input: &Input) -> Option<Results> {
     let res = match input {
         Input::Api(x) => {
             let url = dbg!(format!("{BASE_URL}/category_rounds/{x}/results/"));
@@ -136,20 +141,27 @@ async fn get_results(input: Input) -> Option<Results> {
 
 /// Remove random fucking PHP warnings from the output
 fn clean_api_output(x: String) -> String {
-    x.replace("\\/", "/")
-        .lines()
-        .filter(|line| !line.starts_with('<'))
-        .collect()
+    x.lines().filter(|line| !line.starts_with('<')).collect()
 }
 
 // define a component that renders a div with the text "Hello, world!"
 fn App(cx: Scope<(Input,)>) -> Element {
-    let future = use_future(cx, (), |_| get_results(cx.props.0.clone()));
+    let results = use_state(cx, || None);
+    let _ = use_coroutine(cx, |_: UnboundedReceiver<()>| {
+        let results = results.to_owned();
+        let input = cx.props.0.to_owned();
+        async move {
+            loop {
+                dbg!("fetching!!");
+                results.set(fetch_results(&input).await);
+                sleep(Duration::from_millis(1000)).await;
+            }
+        }
+    });
 
-    let r = match future.value() {
-        Some(Some(r)) => r,
-        Some(None) => return cx.render(rsx!{ "Failed to load" }),
-        None => return cx.render(rsx! { "Loading..." }),
+    let r = match results.get() {
+        Some(r) => r,
+        None => return cx.render(rsx! { "Nothing to show" }),
     };
 
     cx.render(rsx! {
@@ -164,16 +176,44 @@ fn App(cx: Scope<(Input,)>) -> Element {
             class: "table",
             match r.discipline {
                 DisciplineTag::Lead => {
-                    let mut athletes = extract_athletes::<Lead>(r);
-                    // We want higher scores first
-                    athletes.sort_by_key(|p| Reverse(p.score.clone()));
-                    rsx! { athletes.into_iter().enumerate().map(|(i, p)| rsx! {Athlete { rank: i+1, ..p } }) }
+                    let athletes = extract_athletes::<Lead>(r);
+
+                    // We have to keep the nodes in the same order in the DOM
+                    // so we need a map from index to rank. Additionally, we
+                    // need Reverse, because we want the highest score first.
+                    let mut indices: Vec<_> = (0..athletes.len()).collect();
+                    indices.sort_by_key(|&i| Reverse(athletes[i].score.clone()));
+
+                    let mut ranking: Vec<_> = (0..athletes.len()).collect();
+                    ranking.sort_by_key(|&i| indices[i]);
+
+                    let rendered: Vec<_> = athletes
+                        .into_iter()
+                        .zip(ranking)
+                        .map(|(a, i)| rsx! {Athlete { rank: i+1, ..a } })
+                        .collect();
+
+                    rsx!{ rendered.into_iter() }
                 }
-                DisciplineTag::Boulder => {                            
-                    let mut athletes = extract_athletes::<Boulder>(r);
-                    // We want higher scores first
-                    athletes.sort_by_key(|p| Reverse(p.score.clone()));
-                    rsx! { athletes.into_iter().enumerate().map(|(i, p)| rsx! {Athlete { rank: i+1, ..p } }) }
+                DisciplineTag::Boulder => {
+                    let athletes = extract_athletes::<Boulder>(r);
+
+                    // We have to keep the nodes in the same order in the DOM
+                    // so we need a map from index to rank. Additionally, we
+                    // need Reverse, because we want the highest score first.
+                    let mut indices: Vec<_> = (0..athletes.len()).collect();
+                    indices.sort_by_key(|&i| Reverse(athletes[i].score.clone()));
+
+                    let mut ranking: Vec<_> = (0..athletes.len()).collect();
+                    ranking.sort_by_key(|&i| indices[i]);
+
+                    let rendered: Vec<_> = athletes
+                        .into_iter()
+                        .zip(ranking)
+                        .map(|(a, i)| rsx! {Athlete { rank: i+1, ..a } })
+                        .collect();
+
+                    rsx!{ rendered.into_iter() }
                 }
             }
         }
