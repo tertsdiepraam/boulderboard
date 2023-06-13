@@ -1,5 +1,5 @@
 //! Types that define a discpline
-use crate::deserialize;
+use crate::api;
 use dioxus::prelude::LazyNodes;
 
 pub use boulder::*;
@@ -10,7 +10,7 @@ pub trait Discipline {
     type Score: Score<Ascent = Self::Ascent>;
 }
 
-pub trait Ascent: TryFrom<deserialize::Ascent> {
+pub trait Ascent: TryFrom<api::result::Ascent> {
     fn render(&self) -> LazyNodes;
 }
 
@@ -24,9 +24,8 @@ pub trait Score: Ord {
 mod lead {
     use std::cmp::Ordering;
 
-    use crate::deserialize;
-
     use super::{Ascent, Discipline, Score};
+    use crate::api;
     use dioxus::prelude::{rsx, LazyNodes};
     use serde::Deserialize;
 
@@ -49,11 +48,11 @@ mod lead {
         }
     }
 
-    impl TryFrom<deserialize::Ascent> for LeadAscent {
+    impl TryFrom<api::result::Ascent> for LeadAscent {
         type Error = ();
 
-        fn try_from(value: deserialize::Ascent) -> Result<Self, Self::Error> {
-            if let Some(deserialize::LeadAscent { score }) = value.lead {
+        fn try_from(value: api::result::Ascent) -> Result<Self, Self::Error> {
+            if let Some(api::result::LeadAscent { score }) = value.lead {
                 Ok(Self { score })
             } else {
                 Err(())
@@ -94,7 +93,7 @@ mod boulder {
     use serde::Deserialize;
     use std::cmp::Ordering;
 
-    use crate::deserialize;
+    use crate::api;
 
     use super::{Ascent, Discipline, Score};
 
@@ -126,11 +125,11 @@ mod boulder {
         }
     }
 
-    impl TryFrom<deserialize::Ascent> for BoulderAscent {
+    impl TryFrom<api::result::Ascent> for BoulderAscent {
         type Error = ();
 
-        fn try_from(value: deserialize::Ascent) -> Result<Self, Self::Error> {
-            if let Some(deserialize::BoulderAscent {
+        fn try_from(value: api::result::Ascent) -> Result<Self, Self::Error> {
+            if let Some(api::result::BoulderAscent {
                 top,
                 top_tries,
                 zone,

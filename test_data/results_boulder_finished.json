@@ -27,9 +27,9 @@
         {
           "route_id": 10401,
           "route_name": "1",
-          "top": true,
+          "top": false,
           "top_tries": 5,
-          "zone": true,
+          "zone": false,
           "zone_tries": 5,
           "low_zone": false,
           "points": null,
