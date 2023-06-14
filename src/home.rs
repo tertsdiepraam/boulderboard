@@ -1,5 +1,3 @@
-use std::cell::RefMut;
-
 use crate::api::seasons::{
     CategoryRound as ApiCategoryRound, Event as ApiEvent, Season, SeasonsResponse, ShortCategory,
     ShortEvent, ShortSeason,

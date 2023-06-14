@@ -32,13 +32,13 @@ struct AthleteProps<D: Discipline> {
 
 fn Athlete<D: Discipline>(cx: Scope<AthleteProps<D>>) -> Element {
     let AthleteProps {
-        id,
+        id: _,
         first_name,
         last_name,
         ascents,
         score,
         country,
-        active: _,
+        active,
         rank,
     } = cx.props;
 
@@ -51,7 +51,7 @@ fn Athlete<D: Discipline>(cx: Scope<AthleteProps<D>>) -> Element {
     let order = rank - 1;
     cx.render(rsx! {
         div {
-            key: "{id}",
+            class: if *active { "row-active" } else { "" },
             style: "--order: {order}",
             div { class: "rank", "{rank}" }
             div { class: "country-code", "{country}" }
@@ -101,7 +101,7 @@ async fn fetch_results(input: &LeaderboardInput) -> Option<Results> {
         }
         LeaderboardInput::File(x) => {
             let res = std::fs::read_to_string(x).unwrap();
-            serde_json::from_str(&res).ok()
+            serde_json::from_str(&res).map_err(|e| dbg!(e)).ok()
         }
     }
 }
@@ -170,7 +170,7 @@ pub fn Leaderboard(cx: Scope<LeaderboardProps>) -> Element {
                     let rendered: Vec<_> = athletes
                         .into_iter()
                         .zip(ranking)
-                        .map(|(a, i)| rsx! {Athlete { rank: i+1, ..a } })
+                        .map(|(a, i)| rsx! {Athlete { key: "{a.id}", rank: i+1, ..a } })
                         .collect();
 
                     rsx!{ rendered.into_iter() }

@@ -1,6 +1,5 @@
 use std::fmt::Display;
 
-use chrono::{DateTime, FixedOffset};
 use serde::Deserialize;
 
 #[derive(Deserialize, Debug)]
@@ -18,7 +17,7 @@ impl Display for DisciplineTag {
     }
 }
 
-#[derive(Clone, Deserialize, Debug)]
+#[derive(Clone, Deserialize, Debug, PartialEq, Eq)]
 #[serde(rename_all = "lowercase")]
 pub enum Status {
     Active,
@@ -29,35 +28,35 @@ pub enum Status {
 
 #[derive(Deserialize, Debug)]
 pub struct Results {
-    id: u64,
+    // id: u64,
     pub discipline: DisciplineTag,
-    event_id: u64,
-    dcat_id: u64,
+    // event_id: u64,
+    // dcat_id: u64,
     pub event: Option<String>,
-    status: Option<Status>,
-    status_as_of: Option<DateTime<FixedOffset>>,
+    // status: Option<Status>,
+    // status_as_of: Option<DateTime<FixedOffset>>,
     pub category: String,
     pub round: String,
-    format: String,
-    routes: Vec<Route>,
+    // format: String,
+    // routes: Vec<Route>,
     pub ranking: Vec<RankAthlete>,
-    startlist: Vec<StartAthlete>,
+    // startlist: Vec<StartAthlete>,
 }
 
-#[derive(Deserialize, Debug)]
-pub struct Route {
-    id: u64,
-    name: String,
-    startlist: String,
-}
+// #[derive(Deserialize, Debug)]
+// pub struct Route {
+//     id: u64,
+//     name: String,
+//     startlist: String,
+// }
 
 #[derive(Deserialize, Debug)]
 pub struct Athlete {
     pub athlete_id: u64,
-    name: Option<String>,
+    // name: Option<String>,
     pub firstname: String,
     pub lastname: String,
-    bib: Option<String>,
+    // bib: Option<String>,
     #[serde(flatten)]
     pub country: Country,
 }
@@ -65,41 +64,41 @@ pub struct Athlete {
 #[derive(Deserialize, Debug)]
 pub struct Country {
     pub country: String,
-    flag_url: String,
-    federation_id: u64,
+    // flag_url: String,
+    // federation_id: u64,
 }
 
-#[derive(Deserialize, Debug)]
-pub struct StartAthlete {
-    #[serde(flatten)]
-    athlete: Athlete,
-    route_start_positions: Vec<RouteStartPosition>,
-}
+// #[derive(Deserialize, Debug)]
+// pub struct StartAthlete {
+//     #[serde(flatten)]
+//     athlete: Athlete,
+//     route_start_positions: Vec<RouteStartPosition>,
+// }
 
-#[derive(Deserialize, Debug)]
-pub struct RouteStartPosition {
-    route_name: String,
-    route_id: u64,
-    position: u64,
-}
+// #[derive(Deserialize, Debug)]
+// pub struct RouteStartPosition {
+//     route_name: String,
+//     route_id: u64,
+//     position: u64,
+// }
 
 #[derive(Deserialize, Debug)]
 pub struct RankAthlete {
     #[serde(flatten)]
     pub athlete: Athlete,
-    rank: u64,
-    score: String,
-    start_order: Option<u64>,
+    // rank: u64,
+    // score: String,
+    // start_order: Option<u64>,
     pub ascents: Vec<Ascent>,
     pub active: bool,
 }
 
 #[derive(Clone, Deserialize, Debug)]
 pub struct Ascent {
-    route_id: u64,
-    route_name: String,
-    modified: Option<DateTime<FixedOffset>>,
-    status: Status,
+    // route_id: u64,
+    // route_name: String,
+    // modified: Option<DateTime<FixedOffset>>,
+    pub status: Status,
     #[serde(flatten)]
     pub boulder: Option<BoulderAscent>,
     #[serde(flatten)]
@@ -109,9 +108,9 @@ pub struct Ascent {
 #[derive(Clone, Deserialize, Debug)]
 pub struct BoulderAscent {
     pub top: bool,
-    pub top_tries: u64,
+    pub top_tries: Option<u64>,
     pub zone: bool,
-    pub zone_tries: u64,
+    pub zone_tries: Option<u64>,
 }
 
 #[derive(Clone, Deserialize, Debug)]

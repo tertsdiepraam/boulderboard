@@ -26,7 +26,7 @@ pub async fn request<T: DeserializeOwned>(url: String) -> Option<T> {
     let mut f = std::fs::File::create(path).unwrap();
     write!(f, "{}", &cleaned).unwrap();
 
-    serde_json::from_str(&cleaned).ok()
+    serde_json::from_str(&cleaned).map_err(|e| dbg!(e)).ok()
 }
 
 /// Remove random fucking PHP warnings from the output

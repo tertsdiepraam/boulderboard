@@ -93,7 +93,7 @@ mod boulder {
     use serde::Deserialize;
     use std::cmp::Ordering;
 
-    use crate::api;
+    use crate::api::{self, result::Status};
 
     use super::{Ascent, Discipline, Score};
 
@@ -111,17 +111,28 @@ mod boulder {
         top_tries: u64,
         zone: bool,
         zone_tries: u64,
+        status: Status,
     }
 
     impl Ascent for BoulderAscent {
         fn render(&self) -> LazyNodes {
-            if self.top {
-                rsx! { div { class: "ascent ascent-full" } }
+            let fill_class = if self.top && self.top_tries == 1 {
+                "ascent-flash"
+            } else if self.top {
+                "ascent-full"
             } else if self.zone {
-                rsx! { div { class: "ascent ascent-half" } }
+                "ascent-half"
             } else {
-                rsx! { div { class: "ascent ascent-empty" } }
-            }
+                "ascent-empty"
+            };
+
+            let active_class = if self.status == Status::Active {
+                "ascent-active"
+            } else {
+                ""
+            };
+
+            rsx! { div { class: "ascent {fill_class} {active_class}" } }
         }
     }
 
@@ -138,9 +149,10 @@ mod boulder {
             {
                 Ok(Self {
                     top,
-                    top_tries,
+                    top_tries: top_tries.unwrap_or_default(),
                     zone,
-                    zone_tries,
+                    zone_tries: zone_tries.unwrap_or_default(),
+                    status: value.status,
                 })
             } else {
                 Err(())
