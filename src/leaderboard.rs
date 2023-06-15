@@ -5,11 +5,11 @@ use crate::discipline::{Ascent, Boulder, Lead, Score};
 use dioxus::prelude::*;
 use std::cmp::Reverse;
 use std::path::PathBuf;
-use tokio::time::{sleep, Duration};
+use std::time::Duration;
 
 #[derive(PartialEq, Clone)]
 pub enum LeaderboardInput {
-    Api(u64),
+    Api(String, u64),
     File(PathBuf),
 }
 
@@ -96,7 +96,7 @@ fn extract_athletes<D: Discipline>(results: &Results) -> Vec<AthleteProps<D>> {
 
 async fn fetch_results(input: &LeaderboardInput) -> Option<Results> {
     match input {
-        LeaderboardInput::Api(x) => {
+        LeaderboardInput::Api(_, x) => {
             api::request::<Results>(format!("category_rounds/{x}/results/")).await
         }
         LeaderboardInput::File(x) => {
@@ -115,7 +115,10 @@ pub fn Leaderboard(cx: Scope<LeaderboardProps>) -> Element {
             loop {
                 dbg!("fetching!!");
                 results.set(fetch_results(&input).await);
-                sleep(Duration::from_millis(1000)).await;
+                #[cfg(feature = "desktop")]
+                tokio::time::sleep(Duration::from_millis(1000)).await;
+                #[cfg(feature = "web")]
+                gloo_timers::future::sleep(Duration::from_millis(1000)).await;
             }
         }
     });
@@ -125,11 +128,20 @@ pub fn Leaderboard(cx: Scope<LeaderboardProps>) -> Element {
         None => return cx.render(rsx! { "Nothing to show" }),
     };
 
+    let event = if let Some(event) = &r.event {
+        Some(event)
+    } else if let LeaderboardInput::Api(event, _) = &cx.props.input {
+        Some(event)
+    } else {
+        None
+    };
+
     cx.render(rsx! {
-        if let Some(event) = &r.event {
-            rsx! { div { "{event}" } }
+        if let Some(event) = event {
+            rsx! { div { class: "leaderboard-event", "{event}" } }
         }
         div {
+            class: "leaderboard-round",
             "{r.discipline} - {r.category} - {r.round}"
         }
         div {

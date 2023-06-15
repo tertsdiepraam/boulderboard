@@ -1,0 +1,2696 @@
+{
+  "id": 7686,
+  "event_id": 1297,
+  "dcat_id": 7,
+  "discipline": "Boulder",
+  "category": "Women",
+  "round": "Qualification",
+  "format": "IFSC: 2 groups",
+  "starting_groups": [
+    {
+      "id": 167,
+      "name": "Group A",
+      "ranking": "/api/v1/starting_groups/167/results",
+      "routes": [
+        {
+          "id": 8612,
+          "name": "1",
+          "startlist": "/api/v1/routes/8612/startlist"
+        },
+        {
+          "id": 8613,
+          "name": "2",
+          "startlist": "/api/v1/routes/8613/startlist"
+        },
+        {
+          "id": 8614,
+          "name": "3",
+          "startlist": "/api/v1/routes/8614/startlist"
+        },
+        {
+          "id": 8615,
+          "name": "4",
+          "startlist": "/api/v1/routes/8615/startlist"
+        },
+        {
+          "id": 8616,
+          "name": "5",
+          "startlist": "/api/v1/routes/8616/startlist"
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "name": "Group B",
+      "ranking": "/api/v1/starting_groups/168/results",
+      "routes": [
+        {
+          "id": 8617,
+          "name": "1",
+          "startlist": "/api/v1/routes/8617/startlist"
+        },
+        {
+          "id": 8618,
+          "name": "2",
+          "startlist": "/api/v1/routes/8618/startlist"
+        },
+        {
+          "id": 8619,
+          "name": "3",
+          "startlist": "/api/v1/routes/8619/startlist"
+        },
+        {
+          "id": 8620,
+          "name": "4",
+          "startlist": "/api/v1/routes/8620/startlist"
+        },
+        {
+          "id": 8621,
+          "name": "5",
+          "startlist": "/api/v1/routes/8621/startlist"
+        }
+      ]
+    }
+  ],
+  "ranking": [
+    {
+      "athlete_id": 1803,
+      "firstname": "Natalia",
+      "lastname": "GROSSMAN",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20,
+      "rank": 1,
+      "score": "2T4z 3 10",
+      "start_order": 1,
+      "starting_group": "Group A",
+      "group_rank": 1,
+      "ascents": [
+        {
+          "route_id": 8612,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 2,
+          "zone": true,
+          "zone_tries": 2,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:00:58 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8613,
+          "route_name": "2",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:11:47 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8614,
+          "route_name": "3",
+          "top": false,
+          "top_tries": 9,
+          "zone": true,
+          "zone_tries": 6,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:25:41 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8615,
+          "route_name": "4",
+          "top": false,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:32:43 +00:00",
+          "status": "active"
+        },
+        {
+          "route_id": 8616,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": true
+    },
+    {
+      "athlete_id": 2294,
+      "firstname": "Miho",
+      "lastname": "NONAKA",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25,
+      "rank": 1,
+      "score": "4T4z 5 5",
+      "start_order": 1,
+      "starting_group": "Group B",
+      "group_rank": 1,
+      "ascents": [
+        {
+          "route_id": 8617,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:00:44 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8618,
+          "route_name": "2",
+          "top": true,
+          "top_tries": 2,
+          "zone": true,
+          "zone_tries": 2,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:12:38 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8619,
+          "route_name": "3",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:22:41 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8620,
+          "route_name": "4",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:32:28 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8621,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 1811,
+      "firstname": "Brooke",
+      "lastname": "RABOUTOU",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20,
+      "rank": 3,
+      "score": "3T3z 13 9",
+      "start_order": 2,
+      "starting_group": "Group B",
+      "group_rank": 2,
+      "ascents": [
+        {
+          "route_id": 8617,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 3,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:07:57 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8618,
+          "route_name": "2",
+          "top": true,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 3,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:17:21 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8619,
+          "route_name": "3",
+          "top": true,
+          "top_tries": 7,
+          "zone": true,
+          "zone_tries": 3,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:32:15 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8620,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8621,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 2080,
+      "firstname": "Chaehyun",
+      "lastname": "SEO",
+      "country": "KOR",
+      "flag_url": "https://ifsc.results.info/images/flags/KOR.png",
+      "federation_id": 21,
+      "rank": 3,
+      "score": "2T3z 6 8",
+      "start_order": 3,
+      "starting_group": "Group A",
+      "group_rank": 2,
+      "ascents": [
+        {
+          "route_id": 8612,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 5,
+          "zone": true,
+          "zone_tries": 4,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:15:04 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8613,
+          "route_name": "2",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:22:33 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8614,
+          "route_name": "3",
+          "top": false,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 3,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:32:54 +00:00",
+          "status": "active"
+        },
+        {
+          "route_id": 8615,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8616,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": true
+    },
+    {
+      "athlete_id": 3840,
+      "firstname": "Stasa",
+      "lastname": "GEJO",
+      "country": "SRB",
+      "flag_url": "https://ifsc.results.info/images/flags/SRB.png",
+      "federation_id": 56,
+      "rank": 5,
+      "score": "2T2z 3 2",
+      "start_order": 4,
+      "starting_group": "Group A",
+      "group_rank": 3,
+      "ascents": [
+        {
+          "route_id": 8612,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:16:52 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8613,
+          "route_name": "2",
+          "top": true,
+          "top_tries": 2,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:29:20 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8614,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8615,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8616,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 2357,
+      "firstname": "Futaba",
+      "lastname": "ITO",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25,
+      "rank": 5,
+      "score": "2T2z 8 8",
+      "start_order": 4,
+      "starting_group": "Group B",
+      "group_rank": 3,
+      "ascents": [
+        {
+          "route_id": 8617,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:16:45 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8618,
+          "route_name": "2",
+          "top": true,
+          "top_tries": 7,
+          "zone": true,
+          "zone_tries": 7,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:29:16 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8619,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8620,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8621,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 13596,
+      "firstname": "Zhilu",
+      "lastname": "LUO",
+      "country": "CHN",
+      "flag_url": "https://ifsc.results.info/images/flags/CHN.png",
+      "federation_id": 37,
+      "rank": 7,
+      "score": "1T2z 1 2",
+      "start_order": 3,
+      "starting_group": "Group B",
+      "group_rank": 4,
+      "ascents": [
+        {
+          "route_id": 8617,
+          "route_name": "1",
+          "top": false,
+          "top_tries": 5,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:15:14 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8618,
+          "route_name": "2",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:22:27 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8619,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8620,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8621,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 2501,
+      "firstname": "Oceania",
+      "lastname": "MACKENZIE",
+      "country": "AUS",
+      "flag_url": "https://ifsc.results.info/images/flags/AUS.png",
+      "federation_id": 28,
+      "rank": 7,
+      "score": "1T2z 1 2",
+      "start_order": 5,
+      "starting_group": "Group A",
+      "group_rank": 4,
+      "ascents": [
+        {
+          "route_id": 8612,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:22:04 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8613,
+          "route_name": "2",
+          "top": false,
+          "top_tries": 1,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:32:30 +00:00",
+          "status": "active"
+        },
+        {
+          "route_id": 8614,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8615,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8616,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": true
+    },
+    {
+      "athlete_id": 3113,
+      "firstname": "Hannah",
+      "lastname": "MEUL",
+      "country": "GER",
+      "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+      "federation_id": 6,
+      "rank": 9,
+      "score": "1T2z 3 3",
+      "start_order": 2,
+      "starting_group": "Group A",
+      "group_rank": 5,
+      "ascents": [
+        {
+          "route_id": 8612,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:09:09 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8613,
+          "route_name": "2",
+          "top": false,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 2,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:20:40 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8614,
+          "route_name": "3",
+          "top": false,
+          "top_tries": 9,
+          "zone": false,
+          "zone_tries": 9,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:31:06 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8615,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8616,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 12297,
+      "firstname": "Anon",
+      "lastname": "MATSUFUJI",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25,
+      "rank": 9,
+      "score": "1T2z 3 6",
+      "start_order": 5,
+      "starting_group": "Group B",
+      "group_rank": 5,
+      "ascents": [
+        {
+          "route_id": 8617,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 3,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:23:29 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8618,
+          "route_name": "2",
+          "top": false,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 3,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:32:45 +00:00",
+          "status": "active"
+        },
+        {
+          "route_id": 8619,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8620,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8621,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:57 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": true
+    },
+    {
+      "athlete_id": 1226,
+      "firstname": "Jessica",
+      "lastname": "PILZ",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16,
+      "rank": 11,
+      "score": "1T1z 3 1",
+      "start_order": 6,
+      "starting_group": "Group A",
+      "group_rank": 6,
+      "ascents": [
+        {
+          "route_id": 8612,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 1,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:29:22 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8613,
+          "route_name": "2",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8614,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8615,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8616,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:52 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 12451,
+      "firstname": "Selma",
+      "lastname": "ELHADJ MIMOUNE",
+      "country": "FRA",
+      "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+      "federation_id": 10,
+      "rank": 11,
+      "score": "1T1z 2 2",
+      "start_order": 7,
+      "starting_group": "Group B",
+      "group_rank": 6,
+      "ascents": [
+        {
+          "route_id": 8617,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 2,
+          "zone": true,
+          "zone_tries": 2,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:32:44 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8618,
+          "route_name": "2",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8619,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8620,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:57 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8621,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:57 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    },
+    {
+      "athlete_id": 469,
+      "firstname": "Fanny",
+      "lastname": "GIBERT",
+      "country": "FRA",
+      "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+      "federation_id": 10,
+      "rank": 13,
+      "score": "1T1z 3 2",
+      "start_order": 6,
+      "starting_group": "Group B",
+      "group_rank": 7,
+      "ascents": [
+        {
+          "route_id": 8617,
+          "route_name": "1",
+          "top": true,
+          "top_tries": 3,
+          "zone": true,
+          "zone_tries": 2,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-14 07:30:49 +00:00",
+          "status": "confirmed"
+        },
+        {
+          "route_id": 8618,
+          "route_name": "2",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8619,
+          "route_name": "3",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8620,
+          "route_name": "4",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:56 +00:00",
+          "status": "pending"
+        },
+        {
+          "route_id": 8621,
+          "route_name": "5",
+          "top": false,
+          "top_tries": null,
+          "zone": false,
+          "zone_tries": null,
+          "low_zone": false,
+          "points": null,
+          "low_zone_tries": null,
+          "modified": "2023-06-13 15:56:57 +00:00",
+          "status": "pending"
+        }
+      ],
+      "active": false
+    }
+  ],
+  "startlist": [
+    {
+      "athlete_id": 2294,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 1 },
+        { "route_name": "2", "route_id": 8618, "position": 3 },
+        { "route_name": "3", "route_id": 8619, "position": 5 },
+        { "route_name": "4", "route_id": 8620, "position": 7 },
+        { "route_name": "5", "route_id": 8621, "position": 9 }
+      ],
+      "name": "NONAKA Miho",
+      "firstname": "Miho",
+      "lastname": "NONAKA",
+      "bib": "51",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 1803,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 1 },
+        { "route_name": "2", "route_id": 8613, "position": 3 },
+        { "route_name": "3", "route_id": 8614, "position": 5 },
+        { "route_name": "4", "route_id": 8615, "position": 7 },
+        { "route_name": "5", "route_id": 8616, "position": 9 }
+      ],
+      "name": "GROSSMAN Natalia",
+      "firstname": "Natalia",
+      "lastname": "GROSSMAN",
+      "bib": "1",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20
+    },
+    {
+      "athlete_id": 1811,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 2 },
+        { "route_name": "2", "route_id": 8618, "position": 4 },
+        { "route_name": "3", "route_id": 8619, "position": 6 },
+        { "route_name": "4", "route_id": 8620, "position": 8 },
+        { "route_name": "5", "route_id": 8621, "position": 10 }
+      ],
+      "name": "RABOUTOU Brooke",
+      "firstname": "Brooke",
+      "lastname": "RABOUTOU",
+      "bib": "52",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20
+    },
+    {
+      "athlete_id": 3113,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 2 },
+        { "route_name": "2", "route_id": 8613, "position": 4 },
+        { "route_name": "3", "route_id": 8614, "position": 6 },
+        { "route_name": "4", "route_id": 8615, "position": 8 },
+        { "route_name": "5", "route_id": 8616, "position": 10 }
+      ],
+      "name": "MEUL Hannah",
+      "firstname": "Hannah",
+      "lastname": "MEUL",
+      "bib": "2",
+      "country": "GER",
+      "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+      "federation_id": 6
+    },
+    {
+      "athlete_id": 2080,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 3 },
+        { "route_name": "2", "route_id": 8613, "position": 5 },
+        { "route_name": "3", "route_id": 8614, "position": 7 },
+        { "route_name": "4", "route_id": 8615, "position": 9 },
+        { "route_name": "5", "route_id": 8616, "position": 11 }
+      ],
+      "name": "SEO Chaehyun",
+      "firstname": "Chaehyun",
+      "lastname": "SEO",
+      "bib": "3",
+      "country": "KOR",
+      "flag_url": "https://ifsc.results.info/images/flags/KOR.png",
+      "federation_id": 21
+    },
+    {
+      "athlete_id": 13596,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 3 },
+        { "route_name": "2", "route_id": 8618, "position": 5 },
+        { "route_name": "3", "route_id": 8619, "position": 7 },
+        { "route_name": "4", "route_id": 8620, "position": 9 },
+        { "route_name": "5", "route_id": 8621, "position": 11 }
+      ],
+      "name": "LUO Zhilu",
+      "firstname": "Zhilu",
+      "lastname": "LUO",
+      "bib": "53",
+      "country": "CHN",
+      "flag_url": "https://ifsc.results.info/images/flags/CHN.png",
+      "federation_id": 37
+    },
+    {
+      "athlete_id": 2357,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 4 },
+        { "route_name": "2", "route_id": 8618, "position": 6 },
+        { "route_name": "3", "route_id": 8619, "position": 8 },
+        { "route_name": "4", "route_id": 8620, "position": 10 },
+        { "route_name": "5", "route_id": 8621, "position": 12 }
+      ],
+      "name": "ITO Futaba",
+      "firstname": "Futaba",
+      "lastname": "ITO",
+      "bib": "54",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 3840,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 4 },
+        { "route_name": "2", "route_id": 8613, "position": 6 },
+        { "route_name": "3", "route_id": 8614, "position": 8 },
+        { "route_name": "4", "route_id": 8615, "position": 10 },
+        { "route_name": "5", "route_id": 8616, "position": 12 }
+      ],
+      "name": "GEJO Stasa",
+      "firstname": "Stasa",
+      "lastname": "GEJO",
+      "bib": "4",
+      "country": "SRB",
+      "flag_url": "https://ifsc.results.info/images/flags/SRB.png",
+      "federation_id": 56
+    },
+    {
+      "athlete_id": 2501,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 5 },
+        { "route_name": "2", "route_id": 8613, "position": 7 },
+        { "route_name": "3", "route_id": 8614, "position": 9 },
+        { "route_name": "4", "route_id": 8615, "position": 11 },
+        { "route_name": "5", "route_id": 8616, "position": 13 }
+      ],
+      "name": "MACKENZIE Oceania",
+      "firstname": "Oceania",
+      "lastname": "MACKENZIE",
+      "bib": "5",
+      "country": "AUS",
+      "flag_url": "https://ifsc.results.info/images/flags/AUS.png",
+      "federation_id": 28
+    },
+    {
+      "athlete_id": 12297,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 5 },
+        { "route_name": "2", "route_id": 8618, "position": 7 },
+        { "route_name": "3", "route_id": 8619, "position": 9 },
+        { "route_name": "4", "route_id": 8620, "position": 11 },
+        { "route_name": "5", "route_id": 8621, "position": 13 }
+      ],
+      "name": "MATSUFUJI Anon",
+      "firstname": "Anon",
+      "lastname": "MATSUFUJI",
+      "bib": "55",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 1226,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 6 },
+        { "route_name": "2", "route_id": 8613, "position": 8 },
+        { "route_name": "3", "route_id": 8614, "position": 10 },
+        { "route_name": "4", "route_id": 8615, "position": 12 },
+        { "route_name": "5", "route_id": 8616, "position": 14 }
+      ],
+      "name": "PILZ Jessica",
+      "firstname": "Jessica",
+      "lastname": "PILZ",
+      "bib": "6",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 469,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 6 },
+        { "route_name": "2", "route_id": 8618, "position": 8 },
+        { "route_name": "3", "route_id": 8619, "position": 10 },
+        { "route_name": "4", "route_id": 8620, "position": 12 },
+        { "route_name": "5", "route_id": 8621, "position": 14 }
+      ],
+      "name": "GIBERT Fanny",
+      "firstname": "Fanny",
+      "lastname": "GIBERT",
+      "bib": "56",
+      "country": "FRA",
+      "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+      "federation_id": 10
+    },
+    {
+      "athlete_id": 13021,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 7 },
+        { "route_name": "2", "route_id": 8613, "position": 9 },
+        { "route_name": "3", "route_id": 8614, "position": 11 },
+        { "route_name": "4", "route_id": 8615, "position": 13 },
+        { "route_name": "5", "route_id": 8616, "position": 15 }
+      ],
+      "name": "SANDERS Anastasia",
+      "firstname": "Anastasia",
+      "lastname": "SANDERS",
+      "bib": "7",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20
+    },
+    {
+      "athlete_id": 12451,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 7 },
+        { "route_name": "2", "route_id": 8618, "position": 9 },
+        { "route_name": "3", "route_id": 8619, "position": 11 },
+        { "route_name": "4", "route_id": 8620, "position": 13 },
+        { "route_name": "5", "route_id": 8621, "position": 15 }
+      ],
+      "name": "ELHADJ MIMOUNE Selma",
+      "firstname": "Selma",
+      "lastname": "ELHADJ MIMOUNE",
+      "bib": "57",
+      "country": "FRA",
+      "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+      "federation_id": 10
+    },
+    {
+      "athlete_id": 1147,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 8 },
+        { "route_name": "2", "route_id": 8613, "position": 10 },
+        { "route_name": "3", "route_id": 8614, "position": 12 },
+        { "route_name": "4", "route_id": 8615, "position": 14 },
+        { "route_name": "5", "route_id": 8616, "position": 16 }
+      ],
+      "name": "GARNBRET Janja",
+      "firstname": "Janja",
+      "lastname": "GARNBRET",
+      "bib": "8",
+      "country": "SLO",
+      "flag_url": "https://ifsc.results.info/images/flags/SLO.png",
+      "federation_id": 15
+    },
+    {
+      "athlete_id": 947,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 8 },
+        { "route_name": "2", "route_id": 8618, "position": 10 },
+        { "route_name": "3", "route_id": 8619, "position": 12 },
+        { "route_name": "4", "route_id": 8620, "position": 14 },
+        { "route_name": "5", "route_id": 8621, "position": 16 }
+      ],
+      "name": "MORONI Camilla",
+      "firstname": "Camilla",
+      "lastname": "MORONI",
+      "bib": "58",
+      "country": "ITA",
+      "flag_url": "https://ifsc.results.info/images/flags/ITA.png",
+      "federation_id": 13
+    },
+    {
+      "athlete_id": 14008,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 9 },
+        { "route_name": "2", "route_id": 8613, "position": 11 },
+        { "route_name": "3", "route_id": 8614, "position": 13 },
+        { "route_name": "4", "route_id": 8615, "position": 15 },
+        { "route_name": "5", "route_id": 8616, "position": 17 }
+      ],
+      "name": "SEKIKAWA Melody",
+      "firstname": "Melody",
+      "lastname": "SEKIKAWA",
+      "bib": "9",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 1243,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 9 },
+        { "route_name": "2", "route_id": 8618, "position": 11 },
+        { "route_name": "3", "route_id": 8619, "position": 13 },
+        { "route_name": "4", "route_id": 8620, "position": 15 },
+        { "route_name": "5", "route_id": 8621, "position": 17 }
+      ],
+      "name": "F\u00c4RBER Johanna",
+      "firstname": "Johanna",
+      "lastname": "F\u00c4RBER",
+      "bib": "59",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 1130,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 10 },
+        { "route_name": "2", "route_id": 8613, "position": 12 },
+        { "route_name": "3", "route_id": 8614, "position": 14 },
+        { "route_name": "4", "route_id": 8615, "position": 16 },
+        { "route_name": "5", "route_id": 8616, "position": 18 }
+      ],
+      "name": "DEBEVEC Katja",
+      "firstname": "Katja",
+      "lastname": "DEBEVEC",
+      "bib": "10",
+      "country": "SLO",
+      "flag_url": "https://ifsc.results.info/images/flags/SLO.png",
+      "federation_id": 15
+    },
+    {
+      "athlete_id": 553,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 10 },
+        { "route_name": "2", "route_id": 8618, "position": 12 },
+        { "route_name": "3", "route_id": 8619, "position": 14 },
+        { "route_name": "4", "route_id": 8620, "position": 16 },
+        { "route_name": "5", "route_id": 8621, "position": 18 }
+      ],
+      "name": "COHAUT Flavy",
+      "firstname": "Flavy",
+      "lastname": "COHAUT",
+      "bib": "60",
+      "country": "FRA",
+      "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+      "federation_id": 10
+    },
+    {
+      "athlete_id": 13321,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 11 },
+        { "route_name": "2", "route_id": 8613, "position": 13 },
+        { "route_name": "3", "route_id": 8614, "position": 15 },
+        { "route_name": "4", "route_id": 8615, "position": 17 },
+        { "route_name": "5", "route_id": 8616, "position": 19 }
+      ],
+      "name": "AOYAGI Mia",
+      "firstname": "Mia",
+      "lastname": "AOYAGI",
+      "bib": "11",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 1629,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 11 },
+        { "route_name": "2", "route_id": 8618, "position": 13 },
+        { "route_name": "3", "route_id": 8619, "position": 15 },
+        { "route_name": "4", "route_id": 8620, "position": 17 },
+        { "route_name": "5", "route_id": 8621, "position": 19 }
+      ],
+      "name": "FISCHER Madison",
+      "firstname": "Madison",
+      "lastname": "FISCHER",
+      "bib": "61",
+      "country": "CAN",
+      "flag_url": "https://ifsc.results.info/images/flags/CAN.png",
+      "federation_id": 19
+    },
+    {
+      "athlete_id": 11783,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 12 },
+        { "route_name": "2", "route_id": 8618, "position": 14 },
+        { "route_name": "3", "route_id": 8619, "position": 16 },
+        { "route_name": "4", "route_id": 8620, "position": 18 },
+        { "route_name": "5", "route_id": 8621, "position": 20 }
+      ],
+      "name": "NAKAGAWA Ryu",
+      "firstname": "Ryu",
+      "lastname": "NAKAGAWA",
+      "bib": "62",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 3246,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 12 },
+        { "route_name": "2", "route_id": 8613, "position": 14 },
+        { "route_name": "3", "route_id": 8614, "position": 16 },
+        { "route_name": "4", "route_id": 8615, "position": 18 },
+        { "route_name": "5", "route_id": 8616, "position": 20 }
+      ],
+      "name": "KLINGLER Petra",
+      "firstname": "Petra",
+      "lastname": "KLINGLER",
+      "bib": "12",
+      "country": "SUI",
+      "flag_url": "https://ifsc.results.info/images/flags/SUI.png",
+      "federation_id": 8
+    },
+    {
+      "athlete_id": 1137,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 13 },
+        { "route_name": "2", "route_id": 8613, "position": 15 },
+        { "route_name": "3", "route_id": 8614, "position": 17 },
+        { "route_name": "4", "route_id": 8615, "position": 19 },
+        { "route_name": "5", "route_id": 8616, "position": 21 }
+      ],
+      "name": "KRUDER Julija",
+      "firstname": "Julija",
+      "lastname": "KRUDER",
+      "bib": "13",
+      "country": "SLO",
+      "flag_url": "https://ifsc.results.info/images/flags/SLO.png",
+      "federation_id": 15
+    },
+    {
+      "athlete_id": 1750,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 13 },
+        { "route_name": "2", "route_id": 8618, "position": 15 },
+        { "route_name": "3", "route_id": 8619, "position": 17 },
+        { "route_name": "4", "route_id": 8620, "position": 19 },
+        { "route_name": "5", "route_id": 8621, "position": 21 }
+      ],
+      "name": "CONDIE Kyra",
+      "firstname": "Kyra",
+      "lastname": "CONDIE",
+      "bib": "63",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20
+    },
+    {
+      "athlete_id": 2380,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 14 },
+        { "route_name": "2", "route_id": 8618, "position": 16 },
+        { "route_name": "3", "route_id": 8619, "position": 18 },
+        { "route_name": "4", "route_id": 8620, "position": 20 },
+        { "route_name": "5", "route_id": 8621, "position": 22 }
+      ],
+      "name": "MORI Ai",
+      "firstname": "Ai",
+      "lastname": "MORI",
+      "bib": "64",
+      "country": "JPN",
+      "flag_url": "https://ifsc.results.info/images/flags/JPN.png",
+      "federation_id": 25
+    },
+    {
+      "athlete_id": 4260,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 14 },
+        { "route_name": "2", "route_id": 8613, "position": 16 },
+        { "route_name": "3", "route_id": 8614, "position": 18 },
+        { "route_name": "4", "route_id": 8615, "position": 20 },
+        { "route_name": "5", "route_id": 8616, "position": 22 }
+      ],
+      "name": "YOKOYAMA Sofya",
+      "firstname": "Sofya",
+      "lastname": "YOKOYAMA",
+      "bib": "14",
+      "country": "SUI",
+      "flag_url": "https://ifsc.results.info/images/flags/SUI.png",
+      "federation_id": 8
+    },
+    {
+      "athlete_id": 1486,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 15 },
+        { "route_name": "2", "route_id": 8618, "position": 17 },
+        { "route_name": "3", "route_id": 8619, "position": 19 },
+        { "route_name": "4", "route_id": 8620, "position": 21 },
+        { "route_name": "5", "route_id": 8621, "position": 23 }
+      ],
+      "name": "KAZBEKOVA Ievgeniia",
+      "firstname": "Ievgeniia",
+      "lastname": "KAZBEKOVA",
+      "bib": "65",
+      "country": "UKR",
+      "flag_url": "https://ifsc.results.info/images/flags/UKR.png",
+      "federation_id": 18
+    },
+    {
+      "athlete_id": 11813,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 15 },
+        { "route_name": "2", "route_id": 8613, "position": 17 },
+        { "route_name": "3", "route_id": 8614, "position": 19 },
+        { "route_name": "4", "route_id": 8615, "position": 21 },
+        { "route_name": "5", "route_id": 8616, "position": 23 }
+      ],
+      "name": "COSCOY Cloe",
+      "firstname": "Cloe",
+      "lastname": "COSCOY",
+      "bib": "15",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20
+    },
+    {
+      "athlete_id": 4002,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 16 },
+        { "route_name": "2", "route_id": 8613, "position": 18 },
+        { "route_name": "3", "route_id": 8614, "position": 20 },
+        { "route_name": "4", "route_id": 8615, "position": 22 },
+        { "route_name": "5", "route_id": 8616, "position": 24 }
+      ],
+      "name": "SHIRAN Noa",
+      "firstname": "Noa",
+      "lastname": "SHIRAN",
+      "bib": "16",
+      "country": "ISR",
+      "flag_url": "https://ifsc.results.info/images/flags/ISR.png",
+      "federation_id": 60
+    },
+    {
+      "athlete_id": 4320,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 16 },
+        { "route_name": "2", "route_id": 8618, "position": 18 },
+        { "route_name": "3", "route_id": 8619, "position": 20 },
+        { "route_name": "4", "route_id": 8620, "position": 22 },
+        { "route_name": "5", "route_id": 8621, "position": 24 }
+      ],
+      "name": "WIENAND Roxana",
+      "firstname": "Roxana",
+      "lastname": "WIENAND",
+      "bib": "66",
+      "country": "GER",
+      "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+      "federation_id": 6
+    },
+    {
+      "athlete_id": 2047,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 17 },
+        { "route_name": "2", "route_id": 8613, "position": 19 },
+        { "route_name": "3", "route_id": 8614, "position": 21 },
+        { "route_name": "4", "route_id": 8615, "position": 23 },
+        { "route_name": "5", "route_id": 8616, "position": 25 }
+      ],
+      "name": "SA Sol",
+      "firstname": "Sol",
+      "lastname": "SA",
+      "bib": "17",
+      "country": "KOR",
+      "flag_url": "https://ifsc.results.info/images/flags/KOR.png",
+      "federation_id": 21
+    },
+    {
+      "athlete_id": 4330,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 17 },
+        { "route_name": "2", "route_id": 8618, "position": 19 },
+        { "route_name": "3", "route_id": 8619, "position": 21 },
+        { "route_name": "4", "route_id": 8620, "position": 23 },
+        { "route_name": "5", "route_id": 8621, "position": 25 }
+      ],
+      "name": "D\u00d6RFFEL Lucia",
+      "firstname": "Lucia",
+      "lastname": "D\u00d6RFFEL",
+      "bib": "67",
+      "country": "GER",
+      "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+      "federation_id": 6
+    },
+    {
+      "athlete_id": 1240,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 18 },
+        { "route_name": "2", "route_id": 8618, "position": 20 },
+        { "route_name": "3", "route_id": 8619, "position": 22 },
+        { "route_name": "4", "route_id": 8620, "position": 24 },
+        { "route_name": "5", "route_id": 8621, "position": 26 }
+      ],
+      "name": "STERRER Franziska",
+      "firstname": "Franziska",
+      "lastname": "STERRER",
+      "bib": "68",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 12537,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 18 },
+        { "route_name": "2", "route_id": 8613, "position": 20 },
+        { "route_name": "3", "route_id": 8614, "position": 22 },
+        { "route_name": "4", "route_id": 8615, "position": 24 },
+        { "route_name": "5", "route_id": 8616, "position": 26 }
+      ],
+      "name": "CULLEN Kylie",
+      "firstname": "Kylie",
+      "lastname": "CULLEN",
+      "bib": "18",
+      "country": "USA",
+      "flag_url": "https://ifsc.results.info/images/flags/USA.png",
+      "federation_id": 20
+    },
+    {
+      "athlete_id": 316,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 19 },
+        { "route_name": "2", "route_id": 8613, "position": 21 },
+        { "route_name": "3", "route_id": 8614, "position": 23 },
+        { "route_name": "4", "route_id": 8615, "position": 25 },
+        { "route_name": "5", "route_id": 8616, "position": 27 }
+      ],
+      "name": "CAULIER Chloe",
+      "firstname": "Chloe",
+      "lastname": "CAULIER",
+      "bib": "19",
+      "country": "BEL",
+      "flag_url": "https://ifsc.results.info/images/flags/BEL.png",
+      "federation_id": 9
+    },
+    {
+      "athlete_id": 620,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 19 },
+        { "route_name": "2", "route_id": 8618, "position": 21 },
+        { "route_name": "3", "route_id": 8619, "position": 23 },
+        { "route_name": "4", "route_id": 8620, "position": 25 },
+        { "route_name": "5", "route_id": 8621, "position": 27 }
+      ],
+      "name": "AVEZOU Z\u00e9lia",
+      "firstname": "Z\u00e9lia",
+      "lastname": "AVEZOU",
+      "bib": "69",
+      "country": "FRA",
+      "flag_url": "https://ifsc.results.info/images/flags/FRA.png",
+      "federation_id": 10
+    },
+    {
+      "athlete_id": 3354,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 20 },
+        { "route_name": "2", "route_id": 8613, "position": 22 },
+        { "route_name": "3", "route_id": 8614, "position": 24 },
+        { "route_name": "4", "route_id": 8615, "position": 26 },
+        { "route_name": "5", "route_id": 8616, "position": 28 }
+      ],
+      "name": "H\u00d6NIG Afra",
+      "firstname": "Afra",
+      "lastname": "H\u00d6NIG",
+      "bib": "20",
+      "country": "GER",
+      "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+      "federation_id": 6
+    },
+    {
+      "athlete_id": 928,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 20 },
+        { "route_name": "2", "route_id": 8618, "position": 22 },
+        { "route_name": "3", "route_id": 8619, "position": 24 },
+        { "route_name": "4", "route_id": 8620, "position": 26 },
+        { "route_name": "5", "route_id": 8621, "position": 28 }
+      ],
+      "name": "ROGORA Laura",
+      "firstname": "Laura",
+      "lastname": "ROGORA",
+      "bib": "70",
+      "country": "ITA",
+      "flag_url": "https://ifsc.results.info/images/flags/ITA.png",
+      "federation_id": 13
+    },
+    {
+      "athlete_id": 13857,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 21 },
+        { "route_name": "2", "route_id": 8618, "position": 23 },
+        { "route_name": "3", "route_id": 8619, "position": 25 },
+        { "route_name": "4", "route_id": 8620, "position": 27 },
+        { "route_name": "5", "route_id": 8621, "position": 29 }
+      ],
+      "name": "STASIUK Maya",
+      "firstname": "Maya",
+      "lastname": "STASIUK",
+      "bib": "71",
+      "country": "AUS",
+      "flag_url": "https://ifsc.results.info/images/flags/AUS.png",
+      "federation_id": 28
+    },
+    {
+      "athlete_id": 991,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 21 },
+        { "route_name": "2", "route_id": 8613, "position": 23 },
+        { "route_name": "3", "route_id": 8614, "position": 25 },
+        { "route_name": "4", "route_id": 8615, "position": 27 },
+        { "route_name": "5", "route_id": 8616, "position": 29 }
+      ],
+      "name": "FOGU Miriam",
+      "firstname": "Miriam",
+      "lastname": "FOGU",
+      "bib": "21",
+      "country": "ITA",
+      "flag_url": "https://ifsc.results.info/images/flags/ITA.png",
+      "federation_id": 13
+    },
+    {
+      "athlete_id": 3161,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 22 },
+        { "route_name": "2", "route_id": 8613, "position": 24 },
+        { "route_name": "3", "route_id": 8614, "position": 26 },
+        { "route_name": "4", "route_id": 8615, "position": 28 },
+        { "route_name": "5", "route_id": 8616, "position": 30 }
+      ],
+      "name": "AGUADO Valentina",
+      "firstname": "Valentina",
+      "lastname": "AGUADO",
+      "bib": "22",
+      "country": "ARG",
+      "flag_url": "https://ifsc.results.info/images/flags/ARG.png",
+      "federation_id": 41
+    },
+    {
+      "athlete_id": 694,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 22 },
+        { "route_name": "2", "route_id": 8618, "position": 24 },
+        { "route_name": "3", "route_id": 8619, "position": 26 },
+        { "route_name": "4", "route_id": 8620, "position": 28 },
+        { "route_name": "5", "route_id": 8621, "position": 30 }
+      ],
+      "name": "TOOTHILL Holly",
+      "firstname": "Holly",
+      "lastname": "TOOTHILL",
+      "bib": "72",
+      "country": "GBR",
+      "flag_url": "https://ifsc.results.info/images/flags/GBR.png",
+      "federation_id": 11
+    },
+    {
+      "athlete_id": 2035,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 23 },
+        { "route_name": "2", "route_id": 8618, "position": 25 },
+        { "route_name": "3", "route_id": 8619, "position": 27 },
+        { "route_name": "4", "route_id": 8620, "position": 29 },
+        { "route_name": "5", "route_id": 8621, "position": 31 }
+      ],
+      "name": "KIM Jain",
+      "firstname": "Jain",
+      "lastname": "KIM",
+      "bib": "73",
+      "country": "KOR",
+      "flag_url": "https://ifsc.results.info/images/flags/KOR.png",
+      "federation_id": 21
+    },
+    {
+      "athlete_id": 1153,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 23 },
+        { "route_name": "2", "route_id": 8613, "position": 25 },
+        { "route_name": "3", "route_id": 8614, "position": 27 },
+        { "route_name": "4", "route_id": 8615, "position": 29 },
+        { "route_name": "5", "route_id": 8616, "position": 31 }
+      ],
+      "name": "LUKAN Vita",
+      "firstname": "Vita",
+      "lastname": "LUKAN",
+      "bib": "23",
+      "country": "SLO",
+      "flag_url": "https://ifsc.results.info/images/flags/SLO.png",
+      "federation_id": 15
+    },
+    {
+      "athlete_id": 3986,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 24 },
+        { "route_name": "2", "route_id": 8618, "position": 26 },
+        { "route_name": "3", "route_id": 8619, "position": 28 },
+        { "route_name": "4", "route_id": 8620, "position": 30 },
+        { "route_name": "5", "route_id": 8621, "position": 32 }
+      ],
+      "name": "TAUB Yael",
+      "firstname": "Yael",
+      "lastname": "TAUB",
+      "bib": "74",
+      "country": "ISR",
+      "flag_url": "https://ifsc.results.info/images/flags/ISR.png",
+      "federation_id": 60
+    },
+    {
+      "athlete_id": 910,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 24 },
+        { "route_name": "2", "route_id": 8613, "position": 26 },
+        { "route_name": "3", "route_id": 8614, "position": 28 },
+        { "route_name": "4", "route_id": 8615, "position": 30 },
+        { "route_name": "5", "route_id": 8616, "position": 32 }
+      ],
+      "name": "MEDICI Giulia",
+      "firstname": "Giulia",
+      "lastname": "MEDICI",
+      "bib": "24",
+      "country": "ITA",
+      "flag_url": "https://ifsc.results.info/images/flags/ITA.png",
+      "federation_id": 13
+    },
+    {
+      "athlete_id": 13450,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 25 },
+        { "route_name": "2", "route_id": 8613, "position": 27 },
+        { "route_name": "3", "route_id": 8614, "position": 29 },
+        { "route_name": "4", "route_id": 8615, "position": 31 },
+        { "route_name": "5", "route_id": 8616, "position": 33 }
+      ],
+      "name": "P\u00c9REZ DUATO Rebeca",
+      "firstname": "Rebeca",
+      "lastname": "P\u00c9REZ DUATO",
+      "bib": "25",
+      "country": "ESP",
+      "flag_url": "https://ifsc.results.info/images/flags/ESP.png",
+      "federation_id": 12
+    },
+    {
+      "athlete_id": 1565,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 25 },
+        { "route_name": "2", "route_id": 8618, "position": 27 },
+        { "route_name": "3", "route_id": 8619, "position": 29 },
+        { "route_name": "4", "route_id": 8620, "position": 31 },
+        { "route_name": "5", "route_id": 8621, "position": 33 }
+      ],
+      "name": "YIP Alannah",
+      "firstname": "Alannah",
+      "lastname": "YIP",
+      "bib": "75",
+      "country": "CAN",
+      "flag_url": "https://ifsc.results.info/images/flags/CAN.png",
+      "federation_id": 19
+    },
+    {
+      "athlete_id": 3465,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 26 },
+        { "route_name": "2", "route_id": 8618, "position": 28 },
+        { "route_name": "3", "route_id": 8619, "position": 30 },
+        { "route_name": "4", "route_id": 8620, "position": 32 },
+        { "route_name": "5", "route_id": 8621, "position": 34 }
+      ],
+      "name": "REKABI Elnaz",
+      "firstname": "Elnaz",
+      "lastname": "REKABI",
+      "bib": "76",
+      "country": "IRI",
+      "flag_url": "https://ifsc.results.info/images/flags/IRI.png",
+      "federation_id": 49
+    },
+    {
+      "athlete_id": 3254,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 26 },
+        { "route_name": "2", "route_id": 8613, "position": 28 },
+        { "route_name": "3", "route_id": 8614, "position": 30 },
+        { "route_name": "4", "route_id": 8615, "position": 32 },
+        { "route_name": "5", "route_id": 8616, "position": 34 }
+      ],
+      "name": "K\u00dcMIN Andrea",
+      "firstname": "Andrea",
+      "lastname": "K\u00dcMIN",
+      "bib": "26",
+      "country": "SUI",
+      "flag_url": "https://ifsc.results.info/images/flags/SUI.png",
+      "federation_id": 8
+    },
+    {
+      "athlete_id": 1270,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 27 },
+        { "route_name": "2", "route_id": 8613, "position": 29 },
+        { "route_name": "3", "route_id": 8614, "position": 31 },
+        { "route_name": "4", "route_id": 8615, "position": 33 },
+        { "route_name": "5", "route_id": 8616, "position": 35 }
+      ],
+      "name": "LETTNER Sandra",
+      "firstname": "Sandra",
+      "lastname": "LETTNER",
+      "bib": "27",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 11464,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 27 },
+        { "route_name": "2", "route_id": 8618, "position": 29 },
+        { "route_name": "3", "route_id": 8619, "position": 31 },
+        { "route_name": "4", "route_id": 8620, "position": 33 },
+        { "route_name": "5", "route_id": 8621, "position": 35 }
+      ],
+      "name": "TOTKOVA Aleksandra",
+      "firstname": "Aleksandra",
+      "lastname": "TOTKOVA",
+      "bib": "77",
+      "country": "BUL",
+      "flag_url": "https://ifsc.results.info/images/flags/BUL.png",
+      "federation_id": 26
+    },
+    {
+      "athlete_id": 11479,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 28 },
+        { "route_name": "2", "route_id": 8613, "position": 30 },
+        { "route_name": "3", "route_id": 8614, "position": 32 },
+        { "route_name": "4", "route_id": 8615, "position": 34 },
+        { "route_name": "5", "route_id": 8616, "position": 36 }
+      ],
+      "name": "STOR\u00c5 Regine",
+      "firstname": "Regine",
+      "lastname": "STOR\u00c5",
+      "bib": "28",
+      "country": "NOR",
+      "flag_url": "https://ifsc.results.info/images/flags/NOR.png",
+      "federation_id": 39
+    },
+    {
+      "athlete_id": 2811,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 28 },
+        { "route_name": "2", "route_id": 8618, "position": 30 },
+        { "route_name": "3", "route_id": 8619, "position": 32 },
+        { "route_name": "4", "route_id": 8620, "position": 34 },
+        { "route_name": "5", "route_id": 8621, "position": 36 }
+      ],
+      "name": "LOIKAS Laura",
+      "firstname": "Laura",
+      "lastname": "LOIKAS",
+      "bib": "78",
+      "country": "FIN",
+      "flag_url": "https://ifsc.results.info/images/flags/FIN.png",
+      "federation_id": 35
+    },
+    {
+      "athlete_id": 11624,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 29 },
+        { "route_name": "2", "route_id": 8618, "position": 31 },
+        { "route_name": "3", "route_id": 8619, "position": 33 },
+        { "route_name": "4", "route_id": 8620, "position": 35 },
+        { "route_name": "5", "route_id": 8621, "position": 37 }
+      ],
+      "name": "NESTERENKO Daria",
+      "firstname": "Daria",
+      "lastname": "NESTERENKO",
+      "bib": "79",
+      "country": "UKR",
+      "flag_url": "https://ifsc.results.info/images/flags/UKR.png",
+      "federation_id": 18
+    },
+    {
+      "athlete_id": 1650,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 29 },
+        { "route_name": "2", "route_id": 8613, "position": 31 },
+        { "route_name": "3", "route_id": 8614, "position": 33 },
+        { "route_name": "4", "route_id": 8615, "position": 35 },
+        { "route_name": "5", "route_id": 8616, "position": 37 }
+      ],
+      "name": "CHAPMAN Indiana",
+      "firstname": "Indiana",
+      "lastname": "CHAPMAN",
+      "bib": "29",
+      "country": "CAN",
+      "flag_url": "https://ifsc.results.info/images/flags/CAN.png",
+      "federation_id": 19
+    },
+    {
+      "athlete_id": 4206,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 30 },
+        { "route_name": "2", "route_id": 8618, "position": 32 },
+        { "route_name": "3", "route_id": 8619, "position": 34 },
+        { "route_name": "4", "route_id": 8620, "position": 36 },
+        { "route_name": "5", "route_id": 8621, "position": 38 }
+      ],
+      "name": "LUNA VELASCO Arantza",
+      "firstname": "Arantza",
+      "lastname": "LUNA VELASCO",
+      "bib": "80",
+      "country": "MEX",
+      "flag_url": "https://ifsc.results.info/images/flags/MEX.png",
+      "federation_id": 69
+    },
+    {
+      "athlete_id": 1577,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 30 },
+        { "route_name": "2", "route_id": 8613, "position": 32 },
+        { "route_name": "3", "route_id": 8614, "position": 34 },
+        { "route_name": "4", "route_id": 8615, "position": 36 },
+        { "route_name": "5", "route_id": 8616, "position": 38 }
+      ],
+      "name": "FRANGOS Rebecca",
+      "firstname": "Rebecca",
+      "lastname": "FRANGOS",
+      "bib": "30",
+      "country": "CAN",
+      "flag_url": "https://ifsc.results.info/images/flags/CAN.png",
+      "federation_id": 19
+    },
+    {
+      "athlete_id": 4121,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 31 },
+        { "route_name": "2", "route_id": 8618, "position": 33 },
+        { "route_name": "3", "route_id": 8619, "position": 35 },
+        { "route_name": "4", "route_id": 8620, "position": 37 },
+        { "route_name": "5", "route_id": 8621, "position": 39 }
+      ],
+      "name": "KALLIA Evdoxia-aikaterini",
+      "firstname": "Evdoxia-aikaterini",
+      "lastname": "KALLIA",
+      "bib": "81",
+      "country": "GRE",
+      "flag_url": "https://ifsc.results.info/images/flags/GRE.png",
+      "federation_id": 64
+    },
+    {
+      "athlete_id": 12507,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 31 },
+        { "route_name": "2", "route_id": 8613, "position": 33 },
+        { "route_name": "3", "route_id": 8614, "position": 35 },
+        { "route_name": "4", "route_id": 8615, "position": 37 },
+        { "route_name": "5", "route_id": 8616, "position": 39 }
+      ],
+      "name": "SANTINI MIKULI\u0106 Anja",
+      "firstname": "Anja",
+      "lastname": "SANTINI MIKULI\u0106",
+      "bib": "31",
+      "country": "CRO",
+      "flag_url": "https://ifsc.results.info/images/flags/CRO.png",
+      "federation_id": 98
+    },
+    {
+      "athlete_id": 3374,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 32 },
+        { "route_name": "2", "route_id": 8613, "position": 34 },
+        { "route_name": "3", "route_id": 8614, "position": 36 },
+        { "route_name": "4", "route_id": 8615, "position": 38 },
+        { "route_name": "5", "route_id": 8616, "position": 40 }
+      ],
+      "name": "AGAMBAYEVA Margarita",
+      "firstname": "Margarita",
+      "lastname": "AGAMBAYEVA",
+      "bib": "32",
+      "country": "KAZ",
+      "flag_url": "https://ifsc.results.info/images/flags/KAZ.png",
+      "federation_id": 47
+    },
+    {
+      "athlete_id": 4018,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 32 },
+        { "route_name": "2", "route_id": 8618, "position": 34 },
+        { "route_name": "3", "route_id": 8619, "position": 36 },
+        { "route_name": "4", "route_id": 8620, "position": 38 },
+        { "route_name": "5", "route_id": 8621, "position": 40 }
+      ],
+      "name": "DREAMER Maya",
+      "firstname": "Maya",
+      "lastname": "DREAMER",
+      "bib": "82",
+      "country": "ISR",
+      "flag_url": "https://ifsc.results.info/images/flags/ISR.png",
+      "federation_id": 60
+    },
+    {
+      "athlete_id": 3204,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 33 },
+        { "route_name": "2", "route_id": 8618, "position": 35 },
+        { "route_name": "3", "route_id": 8619, "position": 37 },
+        { "route_name": "4", "route_id": 8620, "position": 39 },
+        { "route_name": "5", "route_id": 8621, "position": 41 }
+      ],
+      "name": "K\u00d6HLER  Anja",
+      "firstname": "Anja",
+      "lastname": "K\u00d6HLER ",
+      "bib": "83",
+      "country": "BRA",
+      "flag_url": "https://ifsc.results.info/images/flags/BRA.png",
+      "federation_id": 40
+    },
+    {
+      "athlete_id": 3911,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 33 },
+        { "route_name": "2", "route_id": 8613, "position": 35 },
+        { "route_name": "3", "route_id": 8614, "position": 37 },
+        { "route_name": "4", "route_id": 8615, "position": 39 },
+        { "route_name": "5", "route_id": 8616, "position": 41 }
+      ],
+      "name": "CONTRERAS Alejandra",
+      "firstname": "Alejandra",
+      "lastname": "CONTRERAS",
+      "bib": "33",
+      "country": "CHI",
+      "flag_url": "https://ifsc.results.info/images/flags/CHI.png",
+      "federation_id": 58
+    },
+    {
+      "athlete_id": 4220,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 34 },
+        { "route_name": "2", "route_id": 8618, "position": 36 },
+        { "route_name": "3", "route_id": 8619, "position": 38 },
+        { "route_name": "4", "route_id": 8620, "position": 40 },
+        { "route_name": "5", "route_id": 8621, "position": 42 }
+      ],
+      "name": "HIDALGO AMEZQUITA Mar\u00eda Fernanda",
+      "firstname": "Mar\u00eda Fernanda",
+      "lastname": "HIDALGO AMEZQUITA",
+      "bib": "84",
+      "country": "MEX",
+      "flag_url": "https://ifsc.results.info/images/flags/MEX.png",
+      "federation_id": 69
+    },
+    {
+      "athlete_id": 1285,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 34 },
+        { "route_name": "2", "route_id": 8613, "position": 36 },
+        { "route_name": "3", "route_id": 8614, "position": 38 },
+        { "route_name": "4", "route_id": 8615, "position": 40 },
+        { "route_name": "5", "route_id": 8616, "position": 42 }
+      ],
+      "name": "KEMPF Lea",
+      "firstname": "Lea",
+      "lastname": "KEMPF",
+      "bib": "34",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 3160,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 35 },
+        { "route_name": "2", "route_id": 8613, "position": 37 },
+        { "route_name": "3", "route_id": 8614, "position": 39 },
+        { "route_name": "4", "route_id": 8615, "position": 41 },
+        { "route_name": "5", "route_id": 8616, "position": 43 }
+      ],
+      "name": "BECERRA Rocio Ailen",
+      "firstname": "Rocio Ailen",
+      "lastname": "BECERRA",
+      "bib": "35",
+      "country": "ARG",
+      "flag_url": "https://ifsc.results.info/images/flags/ARG.png",
+      "federation_id": 41
+    },
+    {
+      "athlete_id": 363,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 35 },
+        { "route_name": "2", "route_id": 8618, "position": 37 },
+        { "route_name": "3", "route_id": 8619, "position": 39 },
+        { "route_name": "4", "route_id": 8620, "position": 41 },
+        { "route_name": "5", "route_id": 8621, "position": 43 }
+      ],
+      "name": "WATILLON Lucie",
+      "firstname": "Lucie",
+      "lastname": "WATILLON",
+      "bib": "85",
+      "country": "BEL",
+      "flag_url": "https://ifsc.results.info/images/flags/BEL.png",
+      "federation_id": 9
+    },
+    {
+      "athlete_id": 11420,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 36 },
+        { "route_name": "2", "route_id": 8613, "position": 38 },
+        { "route_name": "3", "route_id": 8614, "position": 40 },
+        { "route_name": "4", "route_id": 8615, "position": 42 },
+        { "route_name": "5", "route_id": 8616, "position": 44 }
+      ],
+      "name": "MELLADO QUINTEROS Ignacia",
+      "firstname": "Ignacia",
+      "lastname": "MELLADO QUINTEROS",
+      "bib": "36",
+      "country": "CHI",
+      "flag_url": "https://ifsc.results.info/images/flags/CHI.png",
+      "federation_id": 58
+    },
+    {
+      "athlete_id": 2229,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 36 },
+        { "route_name": "2", "route_id": 8618, "position": 38 },
+        { "route_name": "3", "route_id": 8619, "position": 40 },
+        { "route_name": "4", "route_id": 8620, "position": 42 },
+        { "route_name": "5", "route_id": 8621, "position": 44 }
+      ],
+      "name": "WONG Tseng-shun",
+      "firstname": "Tseng-shun",
+      "lastname": "WONG",
+      "bib": "86",
+      "country": "HKG",
+      "flag_url": "https://ifsc.results.info/images/flags/HKG.png",
+      "federation_id": 24
+    },
+    {
+      "athlete_id": 12939,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 37 },
+        { "route_name": "2", "route_id": 8613, "position": 39 },
+        { "route_name": "3", "route_id": 8614, "position": 41 },
+        { "route_name": "4", "route_id": 8615, "position": 43 },
+        { "route_name": "5", "route_id": 8616, "position": 45 }
+      ],
+      "name": "TRAJKOSKA Sara",
+      "firstname": "Sara",
+      "lastname": "TRAJKOSKA",
+      "bib": "37",
+      "country": "MKD",
+      "flag_url": "https://ifsc.results.info/images/flags/MKD.png",
+      "federation_id": 43
+    },
+    {
+      "athlete_id": 3525,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 37 },
+        { "route_name": "2", "route_id": 8618, "position": 39 },
+        { "route_name": "3", "route_id": 8619, "position": 41 },
+        { "route_name": "4", "route_id": 8620, "position": 43 },
+        { "route_name": "5", "route_id": 8621, "position": 45 }
+      ],
+      "name": "RAMEZANI Rahil",
+      "firstname": "Rahil",
+      "lastname": "RAMEZANI",
+      "bib": "87",
+      "country": "IRI",
+      "flag_url": "https://ifsc.results.info/images/flags/IRI.png",
+      "federation_id": 49
+    },
+    {
+      "athlete_id": 14637,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 38 },
+        { "route_name": "2", "route_id": 8618, "position": 40 },
+        { "route_name": "3", "route_id": 8619, "position": 42 },
+        { "route_name": "4", "route_id": 8620, "position": 44 },
+        { "route_name": "5", "route_id": 8621, "position": 46 }
+      ],
+      "name": "DURON ANTONIO Iris Pamela",
+      "firstname": "Iris Pamela",
+      "lastname": "DURON ANTONIO",
+      "bib": "88",
+      "country": "HON",
+      "flag_url": "https://ifsc.results.info/images/flags/HON.png",
+      "federation_id": 85
+    },
+    {
+      "athlete_id": 14644,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 38 },
+        { "route_name": "2", "route_id": 8613, "position": 40 },
+        { "route_name": "3", "route_id": 8614, "position": 42 },
+        { "route_name": "4", "route_id": 8615, "position": 44 },
+        { "route_name": "5", "route_id": 8616, "position": 46 }
+      ],
+      "name": "IM Vinnith",
+      "firstname": "Vinnith",
+      "lastname": "IM",
+      "bib": "38",
+      "country": "CAM",
+      "flag_url": "https://ifsc.results.info/images/flags/CAM.png",
+      "federation_id": 81
+    },
+    {
+      "athlete_id": 12519,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 39 },
+        { "route_name": "2", "route_id": 8618, "position": 41 },
+        { "route_name": "3", "route_id": 8619, "position": 43 },
+        { "route_name": "4", "route_id": 8620, "position": 45 },
+        { "route_name": "5", "route_id": 8621, "position": 47 }
+      ],
+      "name": "HOFER Leonie",
+      "firstname": "Leonie",
+      "lastname": "HOFER",
+      "bib": "89",
+      "country": "ITA",
+      "flag_url": "https://ifsc.results.info/images/flags/ITA.png",
+      "federation_id": 13
+    },
+    {
+      "athlete_id": 14677,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 39 },
+        { "route_name": "2", "route_id": 8613, "position": 41 },
+        { "route_name": "3", "route_id": 8614, "position": 43 },
+        { "route_name": "4", "route_id": 8615, "position": 45 },
+        { "route_name": "5", "route_id": 8616, "position": 47 }
+      ],
+      "name": "HERNANDEZ GUERRERO Grecia Daniela",
+      "firstname": "Grecia Daniela",
+      "lastname": "HERNANDEZ GUERRERO",
+      "bib": "39",
+      "country": "ESA",
+      "flag_url": "https://ifsc.results.info/images/flags/ESA.png",
+      "federation_id": 91
+    },
+    {
+      "athlete_id": 12597,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 40 },
+        { "route_name": "2", "route_id": 8618, "position": 42 },
+        { "route_name": "3", "route_id": 8619, "position": 44 },
+        { "route_name": "4", "route_id": 8620, "position": 46 },
+        { "route_name": "5", "route_id": 8621, "position": 48 }
+      ],
+      "name": "BOLIUS Anna",
+      "firstname": "Anna",
+      "lastname": "BOLIUS",
+      "bib": "90",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 12383,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 40 },
+        { "route_name": "2", "route_id": 8613, "position": 42 },
+        { "route_name": "3", "route_id": 8614, "position": 44 },
+        { "route_name": "4", "route_id": 8615, "position": 46 },
+        { "route_name": "5", "route_id": 8616, "position": 48 }
+      ],
+      "name": "FRANKEN Ariane",
+      "firstname": "Ariane",
+      "lastname": "FRANKEN",
+      "bib": "40",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 11989,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 41 },
+        { "route_name": "2", "route_id": 8613, "position": 43 },
+        { "route_name": "3", "route_id": 8614, "position": 45 },
+        { "route_name": "4", "route_id": 8615, "position": 47 },
+        { "route_name": "5", "route_id": 8616, "position": 49 }
+      ],
+      "name": "CASTILLO Lianet",
+      "firstname": "Lianet",
+      "lastname": "CASTILLO",
+      "bib": "41",
+      "country": "VEN",
+      "flag_url": "https://ifsc.results.info/images/flags/VEN.png",
+      "federation_id": 42
+    },
+    {
+      "athlete_id": 742,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 41 },
+        { "route_name": "2", "route_id": 8618, "position": 43 },
+        { "route_name": "3", "route_id": 8619, "position": 45 },
+        { "route_name": "4", "route_id": 8620, "position": 47 },
+        { "route_name": "5", "route_id": 8621, "position": 49 }
+      ],
+      "name": "FLOCKHART Louise",
+      "firstname": "Louise",
+      "lastname": "FLOCKHART",
+      "bib": "91",
+      "country": "GBR",
+      "flag_url": "https://ifsc.results.info/images/flags/GBR.png",
+      "federation_id": 11
+    },
+    {
+      "athlete_id": 12336,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 42 },
+        { "route_name": "2", "route_id": 8613, "position": 44 },
+        { "route_name": "3", "route_id": 8614, "position": 46 },
+        { "route_name": "4", "route_id": 8615, "position": 48 },
+        { "route_name": "5", "route_id": 8616, "position": 50 }
+      ],
+      "name": "APEL Anna Maria",
+      "firstname": "Anna Maria",
+      "lastname": "APEL",
+      "bib": "42",
+      "country": "GER",
+      "flag_url": "https://ifsc.results.info/images/flags/GER.png",
+      "federation_id": 6
+    },
+    {
+      "athlete_id": 12947,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 42 },
+        { "route_name": "2", "route_id": 8618, "position": 44 },
+        { "route_name": "3", "route_id": 8619, "position": 46 },
+        { "route_name": "4", "route_id": 8620, "position": 48 },
+        { "route_name": "5", "route_id": 8621, "position": 50 }
+      ],
+      "name": "GARLICK Lucy",
+      "firstname": "Lucy",
+      "lastname": "GARLICK",
+      "bib": "92",
+      "country": "GBR",
+      "flag_url": "https://ifsc.results.info/images/flags/GBR.png",
+      "federation_id": 11
+    },
+    {
+      "athlete_id": 13403,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 43 },
+        { "route_name": "2", "route_id": 8618, "position": 45 },
+        { "route_name": "3", "route_id": 8619, "position": 47 },
+        { "route_name": "4", "route_id": 8620, "position": 49 },
+        { "route_name": "5", "route_id": 8621, "position": 51 }
+      ],
+      "name": "KLAUNZER Maya",
+      "firstname": "Maya",
+      "lastname": "KLAUNZER",
+      "bib": "93",
+      "country": "AUT",
+      "flag_url": "https://ifsc.results.info/images/flags/AUT.png",
+      "federation_id": 16
+    },
+    {
+      "athlete_id": 4135,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 43 },
+        { "route_name": "2", "route_id": 8613, "position": 45 },
+        { "route_name": "3", "route_id": 8614, "position": 47 },
+        { "route_name": "4", "route_id": 8615, "position": 49 },
+        { "route_name": "5", "route_id": 8616, "position": 51 }
+      ],
+      "name": "VALSAMIDI Danai",
+      "firstname": "Danai",
+      "lastname": "VALSAMIDI",
+      "bib": "43",
+      "country": "GRE",
+      "flag_url": "https://ifsc.results.info/images/flags/GRE.png",
+      "federation_id": 64
+    },
+    {
+      "athlete_id": 3594,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 44 },
+        { "route_name": "2", "route_id": 8618, "position": 46 },
+        { "route_name": "3", "route_id": 8619, "position": 48 },
+        { "route_name": "4", "route_id": 8620, "position": 50 },
+        { "route_name": "5", "route_id": 8621, "position": 52 }
+      ],
+      "name": "VAN DER MEER Lynn",
+      "firstname": "Lynn",
+      "lastname": "VAN DER MEER",
+      "bib": "94",
+      "country": "NED",
+      "flag_url": "https://ifsc.results.info/images/flags/NED.png",
+      "federation_id": 50
+    },
+    {
+      "athlete_id": 349,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 44 },
+        { "route_name": "2", "route_id": 8613, "position": 46 },
+        { "route_name": "3", "route_id": 8614, "position": 48 },
+        { "route_name": "4", "route_id": 8615, "position": 50 },
+        { "route_name": "5", "route_id": 8616, "position": 52 }
+      ],
+      "name": "DELCOIGNE Lucie",
+      "firstname": "Lucie",
+      "lastname": "DELCOIGNE",
+      "bib": "44",
+      "country": "BEL",
+      "flag_url": "https://ifsc.results.info/images/flags/BEL.png",
+      "federation_id": 9
+    },
+    {
+      "athlete_id": 12308,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 45 },
+        { "route_name": "2", "route_id": 8613, "position": 47 },
+        { "route_name": "3", "route_id": 8614, "position": 49 },
+        { "route_name": "4", "route_id": 8615, "position": 51 },
+        { "route_name": "5", "route_id": 8616, "position": 53 }
+      ],
+      "name": "OATES Tegwen",
+      "firstname": "Tegwen",
+      "lastname": "OATES",
+      "bib": "45",
+      "country": "RSA",
+      "flag_url": "https://ifsc.results.info/images/flags/RSA.png",
+      "federation_id": 14
+    },
+    {
+      "athlete_id": 13780,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 45 },
+        { "route_name": "2", "route_id": 8618, "position": 47 },
+        { "route_name": "3", "route_id": 8619, "position": 49 },
+        { "route_name": "4", "route_id": 8620, "position": 51 },
+        { "route_name": "5", "route_id": 8621, "position": 53 }
+      ],
+      "name": "JANATA-BURNS Ariane",
+      "firstname": "Ariane",
+      "lastname": "JANATA-BURNS",
+      "bib": "95",
+      "country": "RSA",
+      "flag_url": "https://ifsc.results.info/images/flags/RSA.png",
+      "federation_id": 14
+    },
+    {
+      "athlete_id": 12358,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8617, "position": 46 },
+        { "route_name": "2", "route_id": 8618, "position": 48 },
+        { "route_name": "3", "route_id": 8619, "position": 50 },
+        { "route_name": "4", "route_id": 8620, "position": 52 },
+        { "route_name": "5", "route_id": 8621, "position": 54 }
+      ],
+      "name": "MART\u00cdNEZ ALMENDROS Iziar",
+      "firstname": "Iziar",
+      "lastname": "MART\u00cdNEZ ALMENDROS",
+      "bib": "96",
+      "country": "ESP",
+      "flag_url": "https://ifsc.results.info/images/flags/ESP.png",
+      "federation_id": 12
+    },
+    {
+      "athlete_id": 12348,
+      "route_start_positions": [
+        { "route_name": "1", "route_id": 8612, "position": 46 },
+        { "route_name": "2", "route_id": 8613, "position": 48 },
+        { "route_name": "3", "route_id": 8614, "position": 50 },
+        { "route_name": "4", "route_id": 8615, "position": 52 },
+        { "route_name": "5", "route_id": 8616, "position": 54 }
+      ],
+      "name": "BUR\u0160\u00cdKOV\u00c1 Martina",
+      "firstname": "Martina",
+      "lastname": "BUR\u0160\u00cdKOV\u00c1",
+      "bib": "46",
+      "country": "SVK",
+      "flag_url": "https://ifsc.results.info/images/flags/SVK.png",
+      "federation_id": 34
+    }
+  ]
+}

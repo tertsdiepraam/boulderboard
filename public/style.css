@@ -9,6 +9,7 @@ html, body {
   --fg-color-2: #f1cb8a;
   /* blue-ish */
   --fg-color-3: #517383;
+  --fg-color-4: #3d5560;
   /* black */
   --bg-color-1: #000000;
   /* dark blue */
@@ -19,17 +20,34 @@ body {
   background: var(--bg-color-1);
   color: white;
   font-family: oswald;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main {
+  width: min(50em, 100%);
 }
 
 /* home */
+.seasons-table {
+  width: 100%;
+}
 .season {
   margin-top: 3px;
-  width: 100%;
   font-size: 2rem;
   font-weight: bold;
   color: var(--fg-color-2);
   background: var(--bg-color-2);
   padding-left: 0.5em;
+}
+
+.season.expanded {
+  background: var(--fg-color-4)
+}
+
+.event.expanded {
+  background: var(--fg-color-3);
 }
 
 .event {
@@ -40,7 +58,8 @@ body {
 }
 
 .nested {
-  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  margin-left: 0.5em;
   border-left: 0.3rem solid var(--fg-color-2);
 }
 
@@ -52,6 +71,10 @@ body {
 
 .table > div.row-active {
   background: #273a54;
+}
+
+.table > div.row-cannot-win {
+  filter: grayscale(80%) contrast(80%) brightness(80%);
 }
 
 .table > div {
@@ -115,6 +138,10 @@ body {
   height: calc(100% - 2px);
   width: calc(0.7em - 2px);
   border: 1px solid var(--fg-color-2);
+}
+
+.ascent.ascent-pending {
+  background: var(--fg-color-4);
 }
 
 .ascent::after {

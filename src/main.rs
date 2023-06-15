@@ -10,7 +10,6 @@ use crate::{
 };
 use clap::Parser;
 use dioxus::prelude::*;
-use dioxus_desktop::Config;
 use std::path::PathBuf;
 
 #[derive(Parser, Debug, Props, PartialEq)]
@@ -29,7 +28,6 @@ struct AppState {
 #[derive(PartialEq, Clone)]
 enum Page {
     Home,
-    Event(u64),
     Leaderboard(LeaderboardInput),
 }
 
@@ -42,18 +40,31 @@ fn main() {
     };
 
     // launch the dioxus app in a webview
-    dioxus_desktop::launch_with_props(App, AppState { page }, Config::default());
+    #[cfg(feature = "web")]
+    dioxus_web::launch_with_props(App, AppState { page }, dioxus_web::Config::default());
+    #[cfg(feature = "desktop")]
+    dioxus_desktop::launch_with_props(App, AppState { page }, dioxus_desktop::Config::default());
+    #[cfg(all(feature = "desktop", feature = "web"))]
+    compile_error!("Cannot enable both desktop and web");
+    #[cfg(not(any(feature = "desktop", feature = "web")))]
+    compile_error!("You have to enable either desktop or web");
 }
+
+const FONT: &str = r#"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+"#;
 
 fn App(cx: Scope<AppState>) -> Element {
     use_shared_state_provider(cx, || cx.props.page.clone());
     let page = use_shared_state::<Page>(cx).unwrap();
     cx.render(rsx! {
+        head { dangerous_inner_html: "{FONT}" }
         style { include_str!("../public/style.css") }
         match page.read().clone() {
             Page::Home => rsx! { Home {} },
             Page::Leaderboard(input) => rsx! { Leaderboard { input: input.clone() } },
-            _ => todo!(),
         }
     })
 }

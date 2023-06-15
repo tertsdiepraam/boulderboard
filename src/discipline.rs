@@ -126,13 +126,15 @@ mod boulder {
                 "ascent-empty"
             };
 
-            let active_class = if self.status == Status::Active {
+            let status_class = if self.status == Status::Active {
                 "ascent-active"
+            } else if self.status == Status::Pending {
+                "ascent-pending"
             } else {
                 ""
             };
 
-            rsx! { div { class: "ascent {fill_class} {active_class}" } }
+            rsx! { div { class: "ascent {fill_class} {status_class}" } }
         }
     }
 
