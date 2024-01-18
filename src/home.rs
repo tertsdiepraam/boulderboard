@@ -4,6 +4,7 @@ use crate::api::seasons::{
 };
 use crate::leaderboard::LeaderboardInput;
 use crate::{api, Page};
+use chrono::{DateTime, Local};
 use dioxus::prelude::*;
 
 fn Season(cx: Scope<ShortSeason>) -> Element {
@@ -57,6 +58,7 @@ fn Event(cx: Scope<ShortEvent>) -> Element {
         ""
     };
     let now = chrono::offset::Utc::now();
+    
     let state = if cx.props.starts_at > now {
         "Pending"
     } else if cx.props.ends_at > now {
@@ -64,12 +66,24 @@ fn Event(cx: Scope<ShortEvent>) -> Element {
     } else {
         "Finished"
     };
+
+    let starts_at: DateTime<Local> = cx.props.starts_at.into();
+    let ends_at: DateTime<Local> = cx.props.ends_at.into();
+
+    let date = starts_at.date_naive().format("%b %e");
+    let start_time = starts_at.time().format("%H:%M");
+    let end_time = ends_at.time().format("%H:%M");
+
     cx.render(rsx! {
         div {
             div {
                 class: "event {expanded_class}",
                 onclick: move |_| expanded.modify(|b| !b),
-                "{state} - {cx.props.event}"
+                div { "{cx.props.event}" }
+                div {
+                    class: "datetime",
+                    "{state} | {date} | {start_time} - {end_time}"
+                }
             }
             if *expanded.get() {
                 rsx!{ CategoryList { ..cx.props.clone() } }
@@ -124,7 +138,9 @@ pub fn Home(cx: Scope) -> Element {
 
     cx.render(match future.value() {
         Some(Some(SeasonsResponse { seasons })) => {
-            rsx! { 
+            rsx! {
+                RelevantEvents { id: seasons[0].id, name: seasons[0].name.clone() }
+                h1 { "All seasons" }
                 div {
                     class: "seasons-table",
                     seasons.iter().map(|s| rsx!{ Season { ..s.clone() }})
@@ -132,5 +148,44 @@ pub fn Home(cx: Scope) -> Element {
             }
         }
         _ => rsx! { "Loading..." },
+    })
+}
+
+pub fn RelevantEvents(cx: Scope<ShortSeason>) -> Element {
+    let url = format!("seasons/{}", cx.props.id);
+    let future = use_future(cx, (&cx.props.id,), |_| api::request::<Season>(url));
+    
+    let now = chrono::offset::Utc::now();
+
+    let filter_events = move |n, f: Box<dyn Fn(_) -> _>| {
+        match future.value() {
+            Some(Some(season)) => {
+                let events = season.events.clone();
+                let mut events: Vec<_> = events.into_iter().filter(|e| f(e.clone())).collect();
+                if let Some(n) = n {
+                    events.truncate(n);
+                }
+                if events.is_empty() {
+                    rsx! { "No events" }
+                } else {
+                    rsx! { events.into_iter().map(|e| rsx! { Event { ..e.clone() } }) }
+                }
+            }
+            Some(None) => rsx! { "Could not load events" },
+            None => rsx! { "Loading... " },
+        }
+    };
+    let current_events = filter_events(None, Box::new(|e: ShortEvent| e.starts_at < now && e.ends_at > now));
+    let recent_events = filter_events(Some(5), Box::new(|e: ShortEvent| e.ends_at < now));
+    let upcoming_events = filter_events(Some(5), Box::new(|e: ShortEvent| e.starts_at > now));
+
+    cx.render(rsx! {
+        h1 { "Current season" }
+        h2 { "Current events" }
+        current_events
+        h2 { "Recent events" }
+        recent_events
+        h2 { "Upcoming events" }
+        upcoming_events
     })
 }

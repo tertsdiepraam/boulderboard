@@ -60,7 +60,7 @@ fn App(cx: Scope<AppState>) -> Element {
     use_shared_state_provider(cx, || cx.props.page.clone());
     let page = use_shared_state::<Page>(cx).unwrap();
     cx.render(rsx! {
-        head { dangerous_inner_html: "{FONT}" }
+        head { dangerous_inner_html: "{FONT}", title { "Boulderboard" } }
         style { include_str!("../public/style.css") }
         div { onclick: move |_| *page.write() = Page::Home, class: "header", "Boulderboard"}
         match page.read().clone() {

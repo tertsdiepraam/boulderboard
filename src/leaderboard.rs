@@ -140,12 +140,15 @@ pub fn Leaderboard(cx: Scope<LeaderboardProps>) -> Element {
     };
 
     cx.render(rsx! {
-        if let Some(event) = event {
-            rsx! { div { class: "leaderboard-event", "{event}" } }
-        }
         div {
-            class: "leaderboard-round",
-            "{r.discipline} - {r.category} - {r.round}"
+            class: "info",
+            if let Some(event) = event {
+                rsx! { div { class: "leaderboard-event", "{event}" } }
+            }
+            div {
+                class: "leaderboard-round",
+                "{r.discipline} - {r.category} - {r.round}"
+            }
         }
         div {
             class: "table",
