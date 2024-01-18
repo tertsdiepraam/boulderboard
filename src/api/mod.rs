@@ -5,7 +5,7 @@ pub mod seasons;
 const BASE_URL: &str = if cfg!(feature = "desktop") {
     "https://components.ifsc-climbing.org/results-api.php?api=event_full_results&result_url=/api/v1/"
 } else {
-    "https://ifsc.donsz.nl/"
+    "https://ifsc-proxy.donsz.nl/"
 };
 
 pub async fn request<T: DeserializeOwned>(url: String) -> Option<T> {
