@@ -24,6 +24,7 @@ struct AthleteProps<D: Discipline> {
     first_name: String,
     last_name: String,
     country: String,
+    flag: String,
     ascents: Vec<D::Ascent>,
     score: D::Score,
     active: bool,
@@ -38,6 +39,7 @@ fn Athlete<D: Discipline>(cx: Scope<AthleteProps<D>>) -> Element {
         ascents,
         score,
         country,
+        flag: _flag,
         active,
         rank,
     } = cx.props;
@@ -87,6 +89,7 @@ fn extract_athletes<D: Discipline>(results: &Results) -> Vec<AthleteProps<D>> {
                 score,
                 active: rank_athlete.active,
                 country: rank_athlete.athlete.country.country.clone(),
+                flag: rank_athlete.athlete.country.flag_url.clone(),
                 // Rank is computed later by us, because the API uses weird unstable sorting
                 rank: 0,
             }

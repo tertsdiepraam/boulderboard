@@ -67,7 +67,7 @@ pub struct Athlete {
 #[derive(Deserialize, Debug)]
 pub struct Country {
     pub country: String,
-    // flag_url: String,
+    pub flag_url: String,
     // federation_id: u64,
 }
 
