@@ -1,7 +1,7 @@
 use crate::api;
 use crate::api::result::{DisciplineTag, Results};
 use crate::discipline::Discipline;
-use crate::discipline::{Ascent, Boulder, Lead, Score};
+use crate::discipline::{Ascent, Boulder, Lead, Score, Speed};
 use dioxus::prelude::*;
 use std::cmp::Reverse;
 use std::path::PathBuf;
@@ -169,6 +169,26 @@ pub fn Leaderboard(cx: Scope<LeaderboardProps>) -> Element {
                 }
                 DisciplineTag::Boulder => {
                     let athletes = extract_athletes::<Boulder>(r);
+
+                    // We have to keep the nodes in the same order in the DOM
+                    // so we need a map from index to rank. Additionally, we
+                    // need Reverse, because we want the highest score first.
+                    let mut indices: Vec<_> = (0..athletes.len()).collect();
+                    indices.sort_by_key(|&i| Reverse(athletes[i].score.clone()));
+
+                    let mut ranking: Vec<_> = (0..athletes.len()).collect();
+                    ranking.sort_by_key(|&i| indices[i]);
+
+                    let rendered: Vec<_> = athletes
+                        .into_iter()
+                        .zip(ranking)
+                        .map(|(a, i)| rsx! {Athlete { key: "{a.id}", rank: i+1, ..a } })
+                        .collect();
+
+                    rsx!{ rendered.into_iter() }
+                }
+                DisciplineTag::Speed => {
+                    let athletes = extract_athletes::<Speed>(r);
 
                     // We have to keep the nodes in the same order in the DOM
                     // so we need a map from index to rank. Additionally, we

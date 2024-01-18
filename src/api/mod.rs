@@ -2,8 +2,11 @@ use serde::de::DeserializeOwned;
 pub mod result;
 pub mod seasons;
 
-// const BASE_URL: &str = "https://components.ifsc-climbing.org/results-api.php?api=event_full_results&result_url=/api/v1/";
-const BASE_URL: &str = "https://ifsc.donsz.nl/";
+const BASE_URL: &str = if cfg!(feature = "desktop") {
+    "https://components.ifsc-climbing.org/results-api.php?api=event_full_results&result_url=/api/v1/"
+} else {
+    "https://ifsc.donsz.nl/"
+};
 
 pub async fn request<T: DeserializeOwned>(url: String) -> Option<T> {
     let full_url = dbg!(format!("{BASE_URL}{url}"));
@@ -14,7 +17,7 @@ pub async fn request<T: DeserializeOwned>(url: String) -> Option<T> {
     {
         use std::{
             io::Write,
-            path::{Path, PathBuf},
+            path::PathBuf,
         };
 
         // Write it to the cache for later reference.

@@ -6,6 +6,7 @@ use serde::Deserialize;
 pub enum DisciplineTag {
     Lead,
     Boulder,
+    Speed,
 }
 
 impl Display for DisciplineTag {
@@ -13,6 +14,7 @@ impl Display for DisciplineTag {
         match self {
             Self::Lead => f.write_str("Lead"),
             Self::Boulder => f.write_str("Boulder"),
+            Self::Speed => f.write_str("Speed")
         }
     }
 }
@@ -39,6 +41,7 @@ pub struct Results {
     pub round: String,
     // format: String,
     // routes: Vec<Route>,
+    #[serde(default)]
     pub ranking: Vec<RankAthlete>,
     // startlist: Vec<StartAthlete>,
 }
@@ -103,6 +106,8 @@ pub struct Ascent {
     pub boulder: Option<BoulderAscent>,
     #[serde(flatten)]
     pub lead: Option<LeadAscent>,
+    #[serde(flatten)]
+    pub speed: Option<SpeedAscent>,
 }
 
 #[derive(Clone, Deserialize, Debug)]
@@ -116,4 +121,9 @@ pub struct BoulderAscent {
 #[derive(Clone, Deserialize, Debug)]
 pub struct LeadAscent {
     pub score: String,
+}
+
+#[derive(Clone, Deserialize, Debug)]
+pub struct SpeedAscent {
+    pub time_ms: u64,
 }

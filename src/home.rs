@@ -56,11 +56,20 @@ fn Event(cx: Scope<ShortEvent>) -> Element {
     } else {
         ""
     };
+    let now = chrono::offset::Utc::now();
+    let state = if cx.props.starts_at > now {
+        "Pending"
+    } else if cx.props.ends_at > now {
+        "Started"
+    } else {
+        "Finished"
+    };
     cx.render(rsx! {
         div {
             div {
                 class: "event {expanded_class}",
-                onclick: move |_| expanded.modify(|b| !b), "{cx.props.event}"
+                onclick: move |_| expanded.modify(|b| !b),
+                "{state} - {cx.props.event}"
             }
             if *expanded.get() {
                 rsx!{ CategoryList { ..cx.props.clone() } }

@@ -62,6 +62,7 @@ fn App(cx: Scope<AppState>) -> Element {
     cx.render(rsx! {
         head { dangerous_inner_html: "{FONT}" }
         style { include_str!("../public/style.css") }
+        div { onclick: move |_| *page.write() = Page::Home, class: "header", "Boulderboard"}
         match page.read().clone() {
             Page::Home => rsx! { Home {} },
             Page::Leaderboard(input) => rsx! { Leaderboard { input: input.clone() } },

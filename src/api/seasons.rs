@@ -30,7 +30,7 @@ pub struct ShortEvent {
     // location: String,
     pub event_id: u64,
     pub starts_at: DateTime<Utc>,
-    // ends_at: DateTime<Utc>,
+    pub ends_at: DateTime<Utc>,
     // local_start_date: Date,
     // local_end_date: Date,
     // timezone: ...,

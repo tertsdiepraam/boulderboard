@@ -29,6 +29,15 @@ body {
   width: min(50em, 100%);
 }
 
+.header {
+  width: 100%;
+  text-align: center;
+  background: var(--bg-color-2);
+  color: var(--fg-color-2);
+  font-size: 2em;
+  font-weight: 700;
+}
+
 /* home */
 .seasons-table {
   width: 100%;

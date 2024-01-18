@@ -4,6 +4,7 @@ use dioxus::prelude::LazyNodes;
 
 pub use boulder::*;
 pub use lead::*;
+pub use speed::*;
 
 pub trait Discipline {
     type Ascent: Ascent;
@@ -216,5 +217,59 @@ mod boulder {
     pub struct Attempts {
         success: bool,
         tries: u64,
+    }
+}
+
+mod speed {
+    use super::{Ascent, Discipline, Score};
+    use crate::api;
+    use dioxus::prelude::*;
+
+    #[derive(Debug)]
+    pub struct Speed;
+
+    impl Discipline for Speed {
+        type Ascent = SpeedAscent;
+        type Score = SpeedScore;
+    }
+
+    pub struct SpeedAscent {
+        pub time_ms: u64,
+    }
+
+    impl TryFrom<api::result::Ascent> for SpeedAscent {
+        type Error = ();
+
+        fn try_from(value: api::result::Ascent) -> Result<Self, Self::Error> {
+            if let Some(api::result::SpeedAscent { time_ms }) = value.speed {
+                Ok(Self { time_ms })
+            } else {
+                Err(())
+            }
+        }
+    }
+
+    impl Ascent for SpeedAscent {
+        fn render(&self) -> LazyNodes {
+            rsx! { div { "{self.time_ms}" } }
+        }
+    }
+
+    #[derive(Clone, PartialEq, Eq, PartialOrd, Ord)]
+    pub struct SpeedScore {
+        time_ms: u64
+    }
+
+    impl Score for SpeedScore {
+        type Ascent = SpeedAscent;
+
+        fn render(&self) -> LazyNodes {
+            rsx! { div { "{self.time_ms}" } }
+        }
+
+        fn calculate(_start_order: u64, ascents: &[Self::Ascent]) -> Self {
+            let time_ms = ascents.iter().map(|a| a.time_ms).min().unwrap_or(0);
+            Self { time_ms }
+        }
     }
 }
