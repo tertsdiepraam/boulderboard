@@ -60,7 +60,7 @@ fn Event(cx: Scope<ShortEvent>) -> Element {
     let now = chrono::offset::Utc::now();
     
     let state = if cx.props.starts_at > now {
-        "Pending"
+        "Upcoming"
     } else if cx.props.ends_at > now {
         "Started"
     } else {
